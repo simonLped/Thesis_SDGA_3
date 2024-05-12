@@ -1,0 +1,12 @@
+Count - 2
+DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/Chart3
+DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Chart3
+
+Count - 2
+DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/Chart1
+DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Chart1
+
+Count - 2
+DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/Chart2
+DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Chart2
+

@@ -1,0 +1,48 @@
+%implements "chartSource" "C"
+%function ChartConfig(block, system) void
+  %createrecord chartConfiguration { ...
+          executeAtInitialization  1 ...
+  }
+  %return chartConfiguration
+%endfunction
+%function ChartDataMap(block, system) void
+  %createrecord ChartDataElements {\
+    NumChartData   4 \
+    ChartDataDefaults {\
+      RecordType   "ChartData"\
+      Dimensions   []\
+      IsTestPoint  0\
+    }\
+    ChartData {\
+      Name         "sfEvent"\
+      Description  "ActiveChartEvent"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "doneDoubleBufferReInit"\
+      Description  "DoubleBufferInitCheck"\
+      SFName       ""\
+      Path         ""\
+      SrcLocation  ""\
+    }\
+    ChartData {\
+      Name         "is_active_c14_DUALportRAMinterface_v3"\
+      Description  "StateIsActive"\
+      SFName       "is_active_c14_DUALportRAMinterface_v3"\
+      Path         "is_active_c14_DUALportRAMinterface_v3"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+    ChartData {\
+      Name         "is_c14_DUALportRAMinterface_v3"\
+      Description  "StateActiveChild"\
+      SFName       "is_c14_DUALportRAMinterface_v3"\
+      Path         "is_c14_DUALportRAMinterface_v3"\
+      SrcLocation  ""\
+      IsTestPoint  1\
+    }\
+  }
+  %return ChartDataElements
+%endfunction

@@ -1,0 +1,2 @@
+1 write file over uart, concat last two bits always, send to zynq.
+2 matlab integrate 

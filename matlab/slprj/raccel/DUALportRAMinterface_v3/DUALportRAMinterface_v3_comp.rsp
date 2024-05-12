@@ -1,0 +1,11 @@
+-IC:/Users/Simon/Documents/Thesis_SDGA_2/matlab
+-IC:/Users/Simon/Documents/Thesis_SDGA_2/matlab/slprj/raccel/DUALportRAMinterface_v3
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src/rapid
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/raccel
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src/ext_mode/common
+-IC:/Program\ Files/MATLAB/R2024a/toolbox/coder/rtiostream/src
+-IC:/Program\ Files/MATLAB/R2024a/extern/include
+-IC:/Program\ Files/MATLAB/R2024a/simulink/include
+-IC:/Program\ Files/MATLAB/R2024a/rtw/c/src
+-IC:/Program\ Files/MATLAB/R2024a/toolbox/coder/rtiostream/src/rtiostreamtcpip
+-IC:/Program\ Files/MATLAB/R2024a/toolbox/coder/rtiostream/src/utils

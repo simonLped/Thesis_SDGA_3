@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Sun Mar 24 11:37:28 2024
+# Process ID: 16000
+# Current directory: C:/Users/Simon/Documents/Thesis_SDGA/matlab
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15632 C:\Users\Simon\Documents\Thesis_SDGA\matlab\hdlverifier_cosim_waves.wdb
+# Log file: C:/Users/Simon/Documents/Thesis_SDGA/matlab/vivado.log
+# Journal file: C:/Users/Simon/Documents/Thesis_SDGA/matlab\vivado.jou
+# Running On: DESKTOP-4RDNORI, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 20, Host memory: 34115 MB
+#-----------------------------------------------------------
+start_gui
+open_wave_database {C:\Users\Simon\Documents\Thesis_SDGA\matlab\hdlverifier_cosim_waves.wdb}
+close_sim

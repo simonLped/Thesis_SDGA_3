@@ -1,0 +1,87 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Sat Apr 27 17:01:46 2024
+# Process ID: 15868
+# Current directory: C:/Users/Simon/Documents/VIVADO_projects/project_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent20496 C:\Users\Simon\Documents\VIVADO_projects\project_2\project_2.xpr
+# Log file: C:/Users/Simon/Documents/VIVADO_projects/project_2/vivado.log
+# Journal file: C:/Users/Simon/Documents/VIVADO_projects/project_2\vivado.jou
+# Running On: DESKTOP-4RDNORI, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 20, Host memory: 34115 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.xpr
+open_bd_design {C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/bd/zynq_example/zynq_example.bd}
+regenerate_bd_layout
+validate_bd_design
+open_hw_manager
+close_hw_manager
+save_bd_design
+reset_run synth_1
+reset_run zynq_example_processing_system7_0_0_synth_1
+reset_run zynq_example_xbar_0_synth_1
+reset_run zynq_example_proc_sys_reset_0_0_synth_1
+reset_run zynq_example_axi_bram_ctrl_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+open_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/Simon/Documents/VIVADO_projects/project_2/Top_wrapper.xsa
+open_bd_design {C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/bd/zynq_example/zynq_example.bd}
+startgroup
+create_bd_port -dir O -type clk FCLK_CLK0
+connect_bd_net [get_bd_pins /processing_system7_0/FCLK_CLK0] [get_bd_ports FCLK_CLK0]
+endgroup
+startgroup
+create_bd_port -dir O -from 0 -to 0 -type rst peripheral_aresetn
+connect_bd_net [get_bd_pins /proc_sys_reset_0/peripheral_aresetn] [get_bd_ports peripheral_aresetn]
+endgroup
+startgroup
+set_property CONFIG.Memory_Type {True_Dual_Port_RAM} [get_bd_cells blk_mem_gen_0]
+endgroup
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+endgroup
+regenerate_bd_layout
+regenerate_bd_layout
+add_files -norecurse -scan_for_includes {C:/Users/Simon/Downloads/fibonacci.sv C:/Users/Simon/Downloads/fibonacci_bram.sv C:/Users/Simon/Downloads/zynq_example_top.sv}
+export_ip_user_files -of_objects  [get_files C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/new/Top_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/new/Top_wrapper.v
+make_wrapper -files [get_files C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/bd/zynq_example/zynq_example.bd] -top
+open_bd_design {C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/bd/zynq_example/zynq_example.bd}
+validate_bd_design -force
+save_bd_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top zynq_example_top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode DisplayOnly [current_project]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/Simon/Documents/VIVADO_projects/project_2/zynq_example_top.xsa
+open_bd_design {C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/bd/zynq_example/zynq_example.bd}
+open_bd_design {C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/bd/zynq_example/zynq_example.bd}
+startgroup
+set_property CONFIG.NUM_MI {2} [get_bd_cells axi_interconnect_0]
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M03_AXI]
+endgroup
+undo
+make_wrapper -files [get_files C:/Users/Simon/Documents/VIVADO_projects/project_2/project_2.srcs/sources_1/bd/zynq_example/zynq_example.bd] -top
+delete_bd_objs [get_bd_intf_nets axi_interconnect_0_M03_AXI]
+startgroup
+set_property CONFIG.NUM_MI {2} [get_bd_cells axi_interconnect_0]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+assign_bd_address
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run zynq_example_xbar_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+wait_on_run impl_1
+write_hw_platform -fixed -include_bit -force -file C:/Users/Simon/Documents/VIVADO_projects/project_2/zynq_example_top.xsa
