@@ -1,2 +1,2 @@
-1 write file over uart, concat last two bits always, send to zynq.
-2 matlab integrate 
+1 hello world ax7020
+2 bram test zx7020

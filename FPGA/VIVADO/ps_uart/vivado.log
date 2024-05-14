@@ -1,0 +1,270 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Tue May 14 20:12:54 2024
+# Process ID: 392
+# Current directory: C:/Users/Simon/Documents/VIVADO_projects/ps_uart
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent13692 C:\Users\Simon\Documents\VIVADO_projects\ps_uart\ps_uart.xpr
+# Log file: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/vivado.log
+# Journal file: C:/Users/Simon/Documents/VIVADO_projects/ps_uart\vivado.jou
+# Running On: DESKTOP-4RDNORI, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 20, Host memory: 34115 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/Simon/Documents/ax7020/AX7020_2023.1-master/course_s2_vitis/08_ps_uart/Vivado/ps_uart' since last save.
+INFO: [filemgmt 56-1] Board Part Repository Path: Directory not found as 'C:/../../AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store'; using path 'C:/Users/Simon/AppData/Roaming/Xilinx/Vivado/2023.1/xhub/board_store/xilinx_board_store' instead.
+WARNING: [Project 1-312] File not found as 'C:/Users/Simon/Documents/VIVADO_projects/design_1_wrapper.bit'; using path 'C:/Users/Simon/Documents/ax7020/AX7020_2023.1-master/course_s2_vitis/08_ps_uart/Vivado/design_1_wrapper.bit' instead.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-312] File not found as 'C:/Users/Simon/Documents/VIVADO_projects/design_1_wrapper.bit'; using path 'C:/Users/Simon/Documents/ax7020/AX7020_2023.1-master/course_s2_vitis/08_ps_uart/Vivado/design_1_wrapper.bit' instead.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2023.1/data/ip'.
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.0/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_a/1.1/board.xml as part xcve2802-vsvh1760-2lp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.0/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vek280_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vek280/es/rev_b/1.1/board.xml as part xcve2802-vsvh1760-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.0/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vhk158_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vhk158/es/1.1/board.xml as part xcvh1582-vsva3697-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.2 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.2/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es:part0:1.3 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120/es/1.3/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.0/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk120_es_revb:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk120_revb/es/1.1/board.xml as part xcvp1202-vsva2785-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.0/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:vpk180_es:part0:1.1 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/vpk180/es/1.1/board.xml as part xcvp1802-lsvc4072-2mp-e-s-es1 specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu208ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu208ld/production/2.0/board.xml as part xczu58dr-fsvg1517-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
+WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at C:/Xilinx/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:06 . Memory (MB): peak = 2563.020 ; gain = 445.285
+update_compile_order -fileset sources_1
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Tue May 14 20:13:19 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7z020clg400-2
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 2969.480 ; gain = 0.000
+INFO: [Project 1-479] Netlist was created with Vivado 2023.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 3549.031 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.067 . Memory (MB): peak = 3549.031 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3549.031 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+open_run: Time (s): cpu = 00:00:11 ; elapsed = 00:00:08 . Memory (MB): peak = 3690.871 ; gain = 1088.977
+write_hw_platform -fixed -include_bit -force -file C:/Users/Simon/Documents/VIVADO_projects/ps_uart/design_1_wrapper.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/design_1_wrapper.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/design_1_wrapper.xsa
+INFO: [Hsi 55-2053] elapsed time for repository (C:/Xilinx/Vivado/2023.1/data/embeddedsw) loading 0 seconds
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+open_bd_design {C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/bd/design_1/design_1.bd}
+Reading block design file <C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/bd/design_1/design_1.bd>...
+Adding component instance block -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Successfully read diagram <design_1> from block design file <C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/bd/design_1/design_1.bd>
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 axi_interconnect_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_bram_ctrl:4.1 axi_bram_ctrl_0
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-2] design_1_axi_bram_ctrl_0_0: In IP Integrator, please note that memory depth value gets calculated based on the Data Width of the IP and Address range selected in the Address Editor.Incase a validation error occured on the range of this parameter, please check if the selected Data width and the Address Range are valid. For valid Data width and memory depth values, please refer to the AXI BRAM Controller Product Guide.
+INFO: [xilinx.com:ip:axi_bram_ctrl:4.1-1] design_1_axi_bram_ctrl_0_0: In IP Integrator, The Maximum address range supported is 2G. Selecting the address range more than 2G in the address editor may resets the value of Memory depth to default value (1024). please refer to the AXI BRAM Controller Product Guide.
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:blk_mem_gen:8.4 blk_mem_gen_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 proc_sys_reset_0
+endgroup
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:axi_gpio:2.0 axi_gpio_0
+endgroup
+regenerate_bd_layout
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins proc_sys_reset_0/ext_reset_in]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_bram_ctrl_0/s_axi_aclk]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_gpio_0/s_axi_aclk]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/S00_ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/M00_ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins axi_interconnect_0/M01_ACLK]
+connect_bd_net [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins proc_sys_reset_0/slowest_sync_clk]
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+WARNING: [IP_Flow 19-4067] Ignoring invalid widget type specified checkbox.Providing a default widget
+set_property CONFIG.Memory_Type {True_Dual_Port_RAM} [get_bd_cells blk_mem_gen_0]
+startgroup
+set_property CONFIG.SINGLE_PORT_BRAM {1} [get_bd_cells axi_bram_ctrl_0]
+endgroup
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+connect_bd_intf_net -boundary_type upper [get_bd_intf_pins axi_interconnect_0/S00_AXI] [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_interconnect_0/ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_interconnect_0/S00_ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_interconnect_0/M00_ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_interconnect_0/M01_ARESETN]
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_gpio_0/s_axi_aresetn]
+connect_bd_net [get_bd_pins proc_sys_reset_0/interconnect_aresetn] [get_bd_pins axi_bram_ctrl_0/s_axi_aresetn]
+connect_bd_intf_net [get_bd_intf_pins axi_gpio_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M01_AXI]
+connect_bd_intf_net [get_bd_intf_pins axi_bram_ctrl_0/S_AXI] -boundary_type upper [get_bd_intf_pins axi_interconnect_0/M00_AXI]
+startgroup
+set_property -dict [list \
+  CONFIG.C_ALL_INPUTS {1} \
+  CONFIG.C_ALL_OUTPUTS_2 {1} \
+  CONFIG.C_GPIO2_WIDTH {1} \
+  CONFIG.C_GPIO_WIDTH {1} \
+  CONFIG.C_IS_DUAL {1} \
+] [get_bd_cells axi_gpio_0]
+endgroup
+startgroup
+create_bd_port -dir I -from 0 -to 0 GPIO_done
+connect_bd_net [get_bd_pins /axi_gpio_0/gpio_io_i] [get_bd_ports GPIO_done]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio_io_i> is being overridden by the user with net <GPIO_done_1>. This pin will not be connected as a part of interface connection <GPIO>.
+endgroup
+startgroup
+create_bd_port -dir O -from 0 -to 0 GPIO
+connect_bd_net [get_bd_pins /axi_gpio_0/gpio2_io_o] [get_bd_ports GPIO]
+WARNING: [BD 41-1306] The connection to interface pin </axi_gpio_0/gpio2_io_o> is being overridden by the user with net <axi_gpio_0_gpio2_io_o>. This pin will not be connected as a part of interface connection <GPIO2>.
+endgroup
+startgroup
+create_bd_port -dir O -type clk FCLK_CLK0
+connect_bd_net [get_bd_pins /processing_system7_0/FCLK_CLK0] [get_bd_ports FCLK_CLK0]
+endgroup
+startgroup
+create_bd_port -dir O -from 0 -to 0 -type rst peripheral_aresetn
+connect_bd_net [get_bd_pins /proc_sys_reset_0/peripheral_aresetn] [get_bd_ports peripheral_aresetn]
+endgroup
+connect_bd_intf_net [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTA] [get_bd_intf_pins axi_bram_ctrl_0/BRAM_PORTA]
+startgroup
+make_bd_intf_pins_external  [get_bd_intf_pins blk_mem_gen_0/BRAM_PORTB]
+endgroup
+regenerate_bd_layout
+assign_bd_address
+Slave segment '/axi_gpio_0/S_AXI/Reg' is being assigned into address space '/processing_system7_0/Data' at <0x4120_0000 [ 64K ]>.
+Slave segment '/axi_bram_ctrl_0/S_AXI/Mem0' is being assigned into address space '/processing_system7_0/Data' at <0x4000_0000 [ 8K ]>.
+validate_bd_design
+WARNING: [BD 41-2180] Resetting the memory initialization file of </blk_mem_gen_0> to default.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+set_property range 64K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_bram_ctrl_0_Mem0}]
+set_property range 4K [get_bd_addr_segs {processing_system7_0/Data/SEG_axi_gpio_0_Reg}]
+save_bd_design
+Wrote  : <C:\Users\Simon\Documents\VIVADO_projects\ps_uart\ps_uart.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+close [ open C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/sefsdfsf.v w ]
+add_files C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/sefsdfsf.v
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+export_ip_user_files -of_objects  [get_files C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/sefsdfsf.v] -no_script -reset -force -quiet
+remove_files  C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/sefsdfsf.v
+set_property source_mgmt_mode DisplayOnly [current_project]
+add_files -norecurse -scan_for_includes {C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/index_counter.v C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/PL.v C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/Chart.v C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/ClockDivider.v C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/new/zynq_top.v}
+make_wrapper -files [get_files C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/bd/design_1/design_1.bd] -top
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : <C:\Users\Simon\Documents\VIVADO_projects\ps_uart\ps_uart.srcs\sources_1\bd\design_1\design_1.bd> 
+Wrote  : <C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+set_property top zynq_top [current_fileset]
+reset_run synth_1
+INFO: [Project 1-1160] Copying file C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/synth_1/design_1_wrapper.dcp to C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/utils_1/imports/synth_1 and adding it to utils fileset
+reset_run design_1_processing_system7_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+WARNING: [filemgmt 56-443] The ECC Algorithm string is empty. Setting the Memory Map to default ECC value to ECC_NONE.
+Wrote  : <C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-2384] Width mismatch when connecting pin: '/blk_mem_gen_0/addra'(32) to pin: '/axi_bram_ctrl_0/bram_addr_a'(16) - Only lower order bits will be connected.
+Verilog Output written to : c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/sim/design_1.v
+Verilog Output written to : c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [IP_Flow 19-5611] Unable to find an associated reset port for the interface 'M_AXI_GP0'. A default connection has been created.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_bram_ctrl_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block blk_mem_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block proc_sys_reset_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_gpio_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/s00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file 'c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_interconnect_0/m01_couplers/auto_pc .
+Exporting to file c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Hardware Definition File c:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.gen/sources_1/bd/design_1/synth/design_1.hwdef
+INFO: [IP_Flow 19-6930] IPCACHE: runCacheChecks() number of threads = 8
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_auto_pc_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_auto_pc_1
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_blk_mem_gen_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6921] IPCACHE: Adding cache check func to thread queue for IP design_1_xbar_0
+INFO: [IP_Flow 19-8020] IPCACHE: runCacheChecks() calling threadPool finishWork()
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_auto_pc_1
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_bram_ctrl_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_axi_gpio_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_blk_mem_gen_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_proc_sys_reset_0_0
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
+[Tue May 14 20:29:03 2024] Launched design_1_processing_system7_0_0_synth_1, design_1_xbar_0_synth_1, design_1_auto_pc_1_synth_1, design_1_auto_pc_0_synth_1, design_1_axi_gpio_0_0_synth_1, design_1_proc_sys_reset_0_0_synth_1, design_1_axi_bram_ctrl_0_0_synth_1, design_1_blk_mem_gen_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_processing_system7_0_0_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_processing_system7_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_xbar_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_auto_pc_0_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_axi_gpio_0_0_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_axi_gpio_0_0_synth_1/runme.log
+design_1_proc_sys_reset_0_0_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_proc_sys_reset_0_0_synth_1/runme.log
+design_1_axi_bram_ctrl_0_0_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_axi_bram_ctrl_0_0_synth_1/runme.log
+design_1_blk_mem_gen_0_0_synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/design_1_blk_mem_gen_0_0_synth_1/runme.log
+synth_1: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/synth_1/runme.log
+[Tue May 14 20:29:03 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:11 ; elapsed = 00:00:15 . Memory (MB): peak = 3950.812 ; gain = 0.000
+write_hw_platform -fixed -include_bit -force -file C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa
+INFO: [Vivado 12-8231] Launching Vitis
+INFO: [Vivado 12-417] Running vitis
+INFO: [Vivado 12-8232] Vitis launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+regenerate_bd_layout
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Tue May 14 21:11:05 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 14
+[Tue May 14 21:36:38 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.runs/impl_1/runme.log
+write_hw_platform -fixed -include_bit -force -file C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa
+INFO: [Project 1-1918] Creating Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa ...
+INFO: [Project 1-1943] The Hardware Platform can be used for Hardware
+INFO: [Project 1-1941] Successfully created Hardware Platform: C:/Users/Simon/Documents/VIVADO_projects/ps_uart/zynq_top.xsa
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue May 14 21:59:11 2024...

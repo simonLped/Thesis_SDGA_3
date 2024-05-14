@@ -1,6 +1,6 @@
 % Number of uint16 elements
 % n = 5000;
-n = 12290;
+n = 12291;
 
 
 % Generate random uint16 array of length n
