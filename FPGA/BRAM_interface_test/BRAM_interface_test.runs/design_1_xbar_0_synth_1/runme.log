@@ -1,0 +1,466 @@
+
+*** Running vivado
+    with args -log design_1_xbar_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_xbar_0.tcl
+
+
+
+****** Vivado v2023.1 (64-bit)
+  **** SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+  **** IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+  **** SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source design_1_xbar_0.tcl -notrace
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_xbar_0
+Command: synth_design -top design_1_xbar_0 -part xc7z010clg400-1 -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 20912
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2305.340 ; gain = 409.289
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:53]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_crossbar' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2238]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_si_transactor' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_carry_and' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_carry_and' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:61]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_comparator_static__parameterized0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2132]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_decoder' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:793]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_27_axic_srl_fifo' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_27_ndeep_srl' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6157] synthesizing module 'SRLC32E' [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132323]
+INFO: [Synth 8-6155] done synthesizing module 'SRLC32E' (0#1) [C:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:132323]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_27_ndeep_srl' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_27_axic_srl_fifo' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_arbiter_resp' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1024]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_arbiter_resp' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:1024]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_si_transactor' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_si_transactor__parameterized0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'generic_baseblocks_v2_1_0_mux_enc__parameterized0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/b752/hdl/generic_baseblocks_v2_1_vl_rfs.v:2451]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_si_transactor__parameterized0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3799]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_splitter' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_splitter' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4460]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_wdata_router' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4735]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_27_axic_reg_srl_fifo' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:888]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_27_ndeep_srl__parameterized0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_27_ndeep_srl__parameterized0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:986]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_27_axic_reg_srl_fifo' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:888]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_wdata_router' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4735]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_27_axic_srl_fifo__parameterized0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_27_axic_srl_fifo__parameterized0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_wdata_mux' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_wdata_mux' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axi_register_slice' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_axi2vector' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:59]
+INFO: [Synth 8-6157] synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6155] done synthesizing module 'axi_infrastructure_v1_1_0_vector2axi' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/ec67/hdl/axi_infrastructure_v1_1_vl_rfs.v:473]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized1' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized1' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6157] synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized2' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axic_register_slice__parameterized2' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:1497]
+INFO: [Synth 8-6155] done synthesizing module 'axi_register_slice_v2_1_28_axi_register_slice' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/87d1/hdl/axi_register_slice_v2_1_vl_rfs.v:3725]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_28_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_28_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_28_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_28_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_27_axic_srl_fifo__parameterized1' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_data_fifo_v2_1_27_ndeep_srl__parameterized1' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_27_ndeep_srl__parameterized1' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:1134]
+INFO: [Synth 8-6155] done synthesizing module 'axi_data_fifo_v2_1_27_axic_srl_fifo__parameterized1' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:697]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_wdata_mux__parameterized0' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_wdata_mux__parameterized0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4560]
+WARNING: [Synth 8-7071] port 'aclk2x' of module 'axi_register_slice_v2_1_28_axi_register_slice' is unconnected for instance 'reg_slice_mi' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+WARNING: [Synth 8-7023] instance 'reg_slice_mi' of module 'axi_register_slice_v2_1_28_axi_register_slice' has 93 connections declared, but only 92 given [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3122]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3633]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_decerr_slave' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:3500]
+INFO: [Synth 8-6157] synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter' [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_addr_arbiter' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:422]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_crossbar' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2238]
+INFO: [Synth 8-6155] done synthesizing module 'axi_crossbar_v2_1_29_axi_crossbar' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4883]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (0#1) [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/synth/design_1_xbar_0.v:53]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[2].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[3].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[4].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[5].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[6].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[7].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[0].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[1].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[2].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[3].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[4].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[5].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[6].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element gen_multi_thread.gen_thread_loop[7].gen_debug_r_multi_thread.debug_r_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:4346]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+WARNING: [Synth 8-6014] Unused sequential element areset_d1_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:750]
+WARNING: [Synth 8-6014] Unused sequential element S_READY_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/fab7/hdl/axi_data_fifo_v2_1_vl_rfs.v:789]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[0].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[1].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-6014] Unused sequential element gen_master_slots[2].gen_mi_write.gen_debug_w.debug_w_beat_cnt_i_reg was removed.  [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ipshared/f8f3/hdl/axi_crossbar_v2_1_vl_rfs.v:2997]
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_28_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_28_axic_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_register_slice_v2_1_28_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_register_slice_v2_1_28_axic_register_slice__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_infrastructure_v1_1_0_vector2axi is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[11] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[10] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[9] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[8] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[7] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[6] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[5] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[4] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[3] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[2] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[1] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_infrastructure_v1_1_0_axi2vector is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_crossbar_v2_1_29_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_crossbar_v2_1_29_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ASELECT[0] in module axi_crossbar_v2_1_29_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AVALID in module axi_crossbar_v2_1_29_wdata_mux__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ACLK in module axi_crossbar_v2_1_29_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ARESET in module axi_crossbar_v2_1_29_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ASELECT[0] in module axi_crossbar_v2_1_29_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AVALID in module axi_crossbar_v2_1_29_wdata_mux is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[1] in module axi_crossbar_v2_1_29_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port ADDR[0] in module axi_crossbar_v2_1_29_addr_decoder is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_29_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_29_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_29_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_29_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[11] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[10] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[9] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[8] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[7] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[6] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[5] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[4] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[3] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[2] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[1] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[0] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[11] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[10] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[9] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[8] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[7] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[6] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[5] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[4] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[3] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[2] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[1] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_crossbar_v2_1_29_axi_crossbar is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2550.102 ; gain = 654.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2550.102 ; gain = 654.051
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2550.102 ; gain = 654.051
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.101 . Memory (MB): peak = 2550.102 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.gen/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.runs/design_1_xbar_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2611.234 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 2616.695 ; gain = 5.461
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.runs/design_1_xbar_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'axi_data_fifo_v2_1_27_axic_reg_srl_fifo'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_axi.write_cs_reg' in module 'axi_crossbar_v2_1_29_decerr_slave'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    ZERO |                             1000 |                               10
+                     ONE |                             0010 |                               11
+                     TWO |                             0001 |                               01
+                  iSTATE |                             0100 |                               00
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'axi_data_fifo_v2_1_27_axic_reg_srl_fifo'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+            P_WRITE_IDLE |                              001 |                               00
+            P_WRITE_DATA |                              010 |                               01
+            P_WRITE_RESP |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_axi.write_cs_reg' using encoding 'one-hot' in module 'axi_crossbar_v2_1_29_decerr_slave'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input    8 Bit       Adders := 3     
+	   2 Input    4 Bit       Adders := 38    
+	   2 Input    3 Bit       Adders := 4     
+	   2 Input    2 Bit       Adders := 1     
+	   2 Input    1 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 20    
++---Registers : 
+	               75 Bit    Registers := 2     
+	               47 Bit    Registers := 6     
+	               14 Bit    Registers := 3     
+	               12 Bit    Registers := 18    
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 18    
+	                3 Bit    Registers := 9     
+	                2 Bit    Registers := 10    
+	                1 Bit    Registers := 47    
++---Muxes : 
+	   2 Input   64 Bit        Muxes := 16    
+	   2 Input   47 Bit        Muxes := 6     
+	   2 Input   24 Bit        Muxes := 6     
+	   2 Input    8 Bit        Muxes := 1     
+	   3 Input    4 Bit        Muxes := 17    
+	   2 Input    4 Bit        Muxes := 7     
+	   2 Input    3 Bit        Muxes := 3     
+	   2 Input    2 Bit        Muxes := 48    
+	   2 Input    1 Bit        Muxes := 56    
+	   4 Input    1 Bit        Muxes := 3     
+	   3 Input    1 Bit        Muxes := 9     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-7129] Port aclk2x in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_awuser[0] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[11] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[10] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[9] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[8] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[7] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[6] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[5] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[4] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[3] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[2] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[1] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wid[0] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_wuser[0] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port s_axi_aruser[0] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_buser[0] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port m_axi_ruser[0] in module axi_register_slice_v2_1_28_axi_register_slice is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_29_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_29_si_transactor__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[1] in module axi_crossbar_v2_1_29_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_ABURST[0] in module axi_crossbar_v2_1_29_si_transactor is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[11] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[10] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[9] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[8] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[7] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[6] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[5] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[4] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[3] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[2] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+WARNING: [Synth 8-7129] Port S_AXI_WID[1] in module axi_crossbar_v2_1_29_crossbar is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3332] Sequential element (gen_samd.crossbar_samd/gen_slave_slots[0].gen_si_write.wdata_router_w/wrouter_aw_fifo/FSM_onehot_state_reg[2]) is unused and will be removed from module axi_crossbar_v2_1_29_axi_crossbar.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |CARRY4  |    32|
+|2     |LUT1    |    39|
+|3     |LUT2    |    14|
+|4     |LUT3    |   146|
+|5     |LUT4    |    95|
+|6     |LUT5    |    96|
+|7     |LUT6    |   300|
+|8     |SRLC32E |     2|
+|9     |FDRE    |   787|
+|10    |FDSE    |    12|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 54 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:24 . Memory (MB): peak = 2616.695 ; gain = 654.051
+Synthesis Optimization Complete : Time (s): cpu = 00:00:26 ; elapsed = 00:00:26 . Memory (MB): peak = 2616.695 ; gain = 720.645
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 2616.695 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 32 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2616.695 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: c0047f11
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 132 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:29 . Memory (MB): peak = 2616.695 ; gain = 1102.066
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_xbar_0, cache-ID = 2e07d2e23288620d
+INFO: [Coretcl 2-1174] Renamed 24 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Simon/Documents/VIVADO_projects/BRAM_interface_test/BRAM_interface_test.runs/design_1_xbar_0_synth_1/design_1_xbar_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_xbar_0_utilization_synth.rpt -pb design_1_xbar_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon May 13 21:53:28 2024...

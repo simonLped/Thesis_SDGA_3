@@ -1,8 +1,11 @@
 % Number of uint16 elements
-n = 8;
+% n = 5000;
+n = 12290;
+
 
 % Generate random uint16 array of length n
-uint16Array = randi([0, 65535], n, 1, 'uint16');
+% uint16Array = randi([0, 65535], n, 1, 'uint16');
+uint16Array = out.data_to_output_bin(1:12290+1);
 
 % Initialize the output array with the correct size and type
 outputArray = zeros(2*n, 1, 'uint8');

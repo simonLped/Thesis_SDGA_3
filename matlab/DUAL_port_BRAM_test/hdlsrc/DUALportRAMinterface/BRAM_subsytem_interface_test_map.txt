@@ -1,0 +1,3 @@
+DUALportRAMinterface/BRAM_subsytem_interface_test/index_counter --> index_counter
+DUALportRAMinterface/BRAM_subsytem_interface_test/Chart --> Chart
+DUALportRAMinterface/BRAM_subsytem_interface_test --> BRAM_subsytem_interface_test

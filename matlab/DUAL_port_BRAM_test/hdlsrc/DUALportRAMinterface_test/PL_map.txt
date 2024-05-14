@@ -1,0 +1,3 @@
+DUALportRAMinterface_test/PL/index_counter --> index_counter
+DUALportRAMinterface_test/PL/Chart --> Chart
+DUALportRAMinterface_test/PL --> PL

@@ -2695,7 +2695,7 @@ const void * ) & rtcapiStoredFloats [ 1 ] , ( int8_T ) 0 , ( uint8_T ) 0 } }
 , rtRootInputs , 0 , rtRootOutputs , 0 } , { rtBlockParameters , 456 ,
 rtModelParameters , 1 } , { ( NULL ) , 0 } , { rtDataTypeMap , rtDimensionMap
 , rtFixPtMap , rtElementMap , rtSampleTimeMap , rtDimensionArray } , "float"
-, { 2084735353U , 3922637197U , 527225216U , 1086068622U } , ( NULL ) , 0 , (
+, { 3114469721U , 86150490U , 2369341710U , 1147297213U } , ( NULL ) , 0 , (
 boolean_T ) 0 , rt_LoggedStateIdxList } ; const
 rtwCAPI_ModelMappingStaticInfo * DUALportRAMinterface_v3_GetCAPIStaticMap (
 void ) { return & mmiStatic ; }

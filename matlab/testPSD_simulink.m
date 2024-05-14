@@ -77,7 +77,8 @@ Digital_Comp_v2 = c2d(Comp,Ts);
 load("perfect_individual.mat")
 % optimum_individual = perfect_individual;
 % optimum_individual = optimum_individual_saved(1,:);
-optimum_individual = [-1.991149902343750 1.018585205078125 -0.023895263671875 -1.963287353515625 1.022735595703125 -0.045867919921875];
+optimum_individual = [-1.996032714843750 1.022979736328125 -0.023895263671875 -1.976959228515625 1.029571533203125 -0.040985107421875];
+% optimum_individual = [-1.991149902343750 1.018585205078125 -0.023895263671875 -1.963287353515625 1.022735595703125 -0.045867919921875];
 % optimum_individual = [-1.991149902343750 1.018585205078125 -0.023895263671875 -1.963287353515625 1.022735595703125 -0.045867919921875]
 % optimum_individual = [-1.997192382812500 1.025177001953125 -0.023895263671875 -1.976837158203125 1.026031494140625 -0.034851074218750];
 % optimum_individual = [-1.998657226562500 1.026397705078125 -0.023895263671875 -1.970733642578125 1.032623291015625 -0.046630859375000]
@@ -197,3 +198,63 @@ fprintf('Elapsed Time PSD: %.2f seconds\n', elapsedTime);
 power_M20 = sum(abs(yy2).^2) / N;
 power_SD2 = sum(abs(yy1).^2) / N;
 
+%%
+
+band_lower = 8;
+band_upper = 493;
+
+figure(2)
+semilogx(f,amp_SD2, 'g-', 'DisplayName', 'SD2');
+hold on
+semilogx(f,matched_amp, 'b-', 'DisplayName', 'M2-0 FPGA simulation');
+% semilogx(f,matched_amp, 'r-', 'DisplayName', 'M2-0 ideal');
+
+powerInBand_matched_ = matched_amp(band_lower:band_upper);
+vec = powerInBand_matched_;
+[maxValue, maxIndex] = max(vec);
+
+% Set the maximum value to minus infinity to exclude it
+vec(maxIndex) = -inf;
+secondMax = max(vec);
+powerInBand_matched = max(vec);
+
+
+semilogx(f,powerInBand_matched*ones(1,length(f)), 'k--');
+textString_matched = [num2str(powerInBand_matched, '%0.0f')]; % Concatenating string with variable
+text(2, powerInBand_matched+5, textString_matched, 'FontSize', 12, 'FontWeight', 'bold'); % Display text with variable
+
+
+signal_max = max(matched_amp);
+textString_matched = [num2str(signal_max, '%0.2f')];
+text(150-70, signal_max, textString_matched, 'FontSize', 12, 'FontWeight', 'bold'); % Display text with variable
+
+
+powerInBand_SD2_ = amp_SD2(band_lower:band_upper);
+vec = powerInBand_SD2_;
+[maxValue, maxIndex] = max(vec);
+
+% Set the maximum value to minus infinity to exclude it
+vec(maxIndex) = -inf;
+secondMax = max(vec);
+powerInBand_SD2 = max(vec);
+
+
+semilogx(f,powerInBand_SD2*ones(1,length(f)), 'k--');
+textString_SD2 = [num2str(powerInBand_SD2, '%0.0f')]; % Concatenating string with variable
+text(2, powerInBand_SD2+5, textString_SD2, 'FontSize', 12, 'FontWeight', 'bold'); % Display text with variable
+
+
+
+
+signal_max2 = max(amp_SD2);
+textString_matched = [num2str(signal_max2, '%0.2f')];
+text(150+150, signal_max2, textString_matched, 'FontSize', 12, 'FontWeight', 'bold'); % Display text with variable
+
+legend('SD2','MASH2-0',  'FontSize', 12)
+
+% title('PSD of FPGA Simulation', 'FontSize', 12);
+xlabel('frequency [Hz]', 'FontSize', 14)
+ylabel('Amplitude [dB]', 'FontSize', 14)
+ylim([-160 0]);
+
+hold off

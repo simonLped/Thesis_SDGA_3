@@ -1,213 +1,213 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/slsa_mm_rtp_registry/R2023a">
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="a99f8bc4-757a-452f-8881-b037cc53e2e7">
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="3ec85e60-a937-4261-a3be-f3ed13b9d29b"/>
-    <segmentIndex>1</segmentIndex>
-    <valueIndices>4</valueIndices>
-    <valueIndices>4</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="e9b3e30f-0e78-4171-ae8a-542b719889d1">
-    <modelName>DUALportRAMinterface_v3</modelName>
-  </slsa.mm.rtpregistry.ModelMetadata>
-  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="0c4d0b3e-a083-4bb8-8003-61f3c8b05d31">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="e469eb49-00b2-44b0-9ba8-221775bb3d0a"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="6c68d9a2-91de-42d1-a177-4641edb57a34"/>
-  </slsa.mm.rtpregistry.FixedPointParameter>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="6c68d9a2-91de-42d1-a177-4641edb57a34">
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="0c4d0b3e-a083-4bb8-8003-61f3c8b05d31"/>
-    <segmentIndex>1</segmentIndex>
-    <valueIndices>1</valueIndices>
-    <valueIndices>1</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="ec798e2d-637d-4b64-b49e-b18ffcbb1913">
-    <id type="slsa.mm.rtpregistry.VariableId" uuid="d3373113-c4d5-4ca9-a8c2-0f681f83658f"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="95a74458-c3df-4118-bec5-49bebc4aba43"/>
-  </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="9388ecd5-3e07-48db-9b5e-9da0bceb4864">
-    <blockPath>DUALportRAMinterface_v3/Counter Limited1/Wrap To Zero</blockPath>
-    <name>Threshold</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="9256220d-3903-430b-9dd4-bb7a403f14a6"/>
-  </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="d3373113-c4d5-4ca9-a8c2-0f681f83658f">
-    <workspaceName>global-workspace</workspaceName>
-    <name>Ts</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="ec798e2d-637d-4b64-b49e-b18ffcbb1913"/>
-  </slsa.mm.rtpregistry.VariableId>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="d5576eb8-b81f-402c-b67b-37be4cd1718b">
-    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/PopIdx/Compare To Constant</blockPath>
-    <name>Value</name>
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="3ec85e60-a937-4261-a3be-f3ed13b9d29b"/>
-  </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="95a74458-c3df-4118-bec5-49bebc4aba43">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="ec798e2d-637d-4b64-b49e-b18ffcbb1913"/>
-    <valueIndices>0</valueIndices>
-    <valueIndices>0</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="9ff9f8ad-955e-4546-963d-f4d101ed342d">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="78683080-bd08-40ff-9aaa-122c6f46ddc3"/>
-    <segmentIndex>2</segmentIndex>
-    <valueIndices>4</valueIndices>
-    <valueIndices>4</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="dfa34f66-3e58-410c-ad79-ca0ed0895d3a">
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="1712a513-2f49-4d88-a92c-5316aaed22f6"/>
-    <segmentIndex>1</segmentIndex>
-    <valueIndices>0</valueIndices>
-    <valueIndices>0</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="4f3d255a-06fe-4527-9917-36c3eec32702">
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="67e17d10-4aeb-4d4f-b292-5499bc5d4c2c">
     <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/Upsample2/Counter/Wrap To Zero</blockPath>
     <name>Threshold</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="1222f8ac-9db0-4c0e-98d2-9f6b79c57283"/>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="bce0c5e6-42c8-4211-9556-dce6d37379a3"/>
   </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="8f99c319-c02a-4130-80b7-0b18cbf00ed9">
-    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/ControlSignalsValidation/isFullCheck</blockPath>
-    <name>Value</name>
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="1712a513-2f49-4d88-a92c-5316aaed22f6"/>
-  </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="d7b5e7a1-7ccf-4b2e-8143-a3b10ed25687">
-    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/PopIdx/Compare To Constant</blockPath>
-    <name>Value</name>
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="34915dfb-a175-48f5-bb90-a559b4f73437"/>
-  </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="1712a513-2f49-4d88-a92c-5316aaed22f6">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="8f99c319-c02a-4130-80b7-0b18cbf00ed9"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="dfa34f66-3e58-410c-ad79-ca0ed0895d3a"/>
-  </slsa.mm.rtpregistry.FixedPointParameter>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="645c43a1-e632-469f-90ef-5e88b376b765">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="59e0ca11-28c5-4014-af00-a8e6e5543372"/>
-    <segmentIndex>2</segmentIndex>
-    <valueIndices>1</valueIndices>
-    <valueIndices>1</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="e469eb49-00b2-44b0-9ba8-221775bb3d0a">
-    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/ControlSignalsValidation/isFullCheck</blockPath>
-    <name>Value</name>
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="0c4d0b3e-a083-4bb8-8003-61f3c8b05d31"/>
-  </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="34915dfb-a175-48f5-bb90-a559b4f73437">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="d7b5e7a1-7ccf-4b2e-8143-a3b10ed25687"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="9111e388-8124-44af-8ad4-badf7729464b"/>
-  </slsa.mm.rtpregistry.FixedPointParameter>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="9111e388-8124-44af-8ad4-badf7729464b">
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="34915dfb-a175-48f5-bb90-a559b4f73437"/>
-    <segmentIndex>1</segmentIndex>
-    <valueIndices>2</valueIndices>
-    <valueIndices>2</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="4eab6478-215b-4795-9b91-ef90fb80204a">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="b812e6e5-1644-4ccf-8835-0531e783f602"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="318ee716-d15b-45b3-938d-18df78a47553"/>
-  </slsa.mm.rtpregistry.FixedPointParameter>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="78683080-bd08-40ff-9aaa-122c6f46ddc3">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="47f3ca8c-bc89-435f-8b8b-66d1fa8054a0"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="9ff9f8ad-955e-4546-963d-f4d101ed342d"/>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="27bcb6bd-496a-4c64-85ef-bcae2a14f60e">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="af69851a-51fc-4cdb-b75d-8b53dca30949"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="c7da8766-f539-4fd6-860e-58c2d49c27a4"/>
   </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="b812e6e5-1644-4ccf-8835-0531e783f602">
+  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="a731271e-1a6d-498c-86a7-a82869426012">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="a9e3d208-d8df-43b6-93ff-54c0bcc3c5f5"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="e5604ef2-e0d2-4b22-9d66-1302f3d2ba84"/>
+  </slsa.mm.rtpregistry.FixedPointParameter>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="c7da8766-f539-4fd6-860e-58c2d49c27a4">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="27bcb6bd-496a-4c64-85ef-bcae2a14f60e"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>2</valueIndices>
+    <valueIndices>2</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.ModelMetadata type="slsa.mm.rtpregistry.ModelMetadata" uuid="c7399f5f-5521-42ac-9bab-cd0e861bd0a2">
+    <modelName>DUALportRAMinterface_v3</modelName>
+  </slsa.mm.rtpregistry.ModelMetadata>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="f13d156c-6e8b-4f82-a960-99dd531b3ce8">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="c9dac99f-33e8-4536-95be-5893229b9541"/>
+    <valueIndices>0</valueIndices>
+    <valueIndices>0</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="012eca60-5a11-414f-81c5-0513d608e1b6">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="f4f9b78c-2597-4a00-8d85-b9a217d4de35"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>3</valueIndices>
+    <valueIndices>3</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="4118de55-8093-4896-b190-acc6554a8d86">
     <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/PushIdx/Compare To Constant</blockPath>
     <name>Value</name>
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="4eab6478-215b-4795-9b91-ef90fb80204a"/>
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="e1c55d03-c3cf-498d-bebb-e67c1d68814f"/>
   </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="318ee716-d15b-45b3-938d-18df78a47553">
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="4eab6478-215b-4795-9b91-ef90fb80204a"/>
+  <slsa.mm.rtpregistry.VariableId type="slsa.mm.rtpregistry.VariableId" uuid="417607d3-39ae-4c3e-ad64-64f46722840d">
+    <workspaceName>global-workspace</workspaceName>
+    <name>Ts</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="c9dac99f-33e8-4536-95be-5893229b9541"/>
+  </slsa.mm.rtpregistry.VariableId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="c9dac99f-33e8-4536-95be-5893229b9541">
+    <id type="slsa.mm.rtpregistry.VariableId" uuid="417607d3-39ae-4c3e-ad64-64f46722840d"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="f13d156c-6e8b-4f82-a960-99dd531b3ce8"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="c0f723a2-41d9-4934-ae0d-ce3d4ba7c7d3">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="825b7eb0-9f18-4730-b022-eb1cfc13f50e"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="e4df675f-c321-47ed-81ee-5824f0b1778d"/>
+  </slsa.mm.rtpregistry.FixedPointParameter>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="c29a1e9c-052c-476e-a32b-cb6c274444bf">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="14230a37-894d-4f66-a2ef-5569fbd379c4"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="dfb4fad9-7e5a-4e05-8576-924915d6c84b"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="825b7eb0-9f18-4730-b022-eb1cfc13f50e">
+    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/ControlSignalsValidation/isFullCheck</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="c0f723a2-41d9-4934-ae0d-ce3d4ba7c7d3"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="e4df675f-c321-47ed-81ee-5824f0b1778d">
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="c0f723a2-41d9-4934-ae0d-ce3d4ba7c7d3"/>
     <segmentIndex>1</segmentIndex>
-    <valueIndices>3</valueIndices>
-    <valueIndices>3</valueIndices>
+    <valueIndices>0</valueIndices>
+    <valueIndices>0</valueIndices>
   </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="3ec85e60-a937-4261-a3be-f3ed13b9d29b">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="d5576eb8-b81f-402c-b67b-37be4cd1718b"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="a99f8bc4-757a-452f-8881-b037cc53e2e7"/>
-  </slsa.mm.rtpregistry.FixedPointParameter>
-  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="7989aa9a-7453-41db-89d1-d19272930469">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="5434d713-2aa0-47c0-8240-f0fbf3e57b2a"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="3771bb97-375f-4d54-95e2-37703b14841f"/>
-  </slsa.mm.rtpregistry.FixedPointParameter>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="5434d713-2aa0-47c0-8240-f0fbf3e57b2a">
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="e98198a6-7025-40b0-858b-7cee2b47b01b">
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="8a04d011-11f8-44e1-8ea3-b026e262cf32"/>
+    <segmentIndex>1</segmentIndex>
+    <valueIndices>5</valueIndices>
+    <valueIndices>5</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="a9e3d208-d8df-43b6-93ff-54c0bcc3c5f5">
+    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/ControlSignalsValidation/isFullCheck</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="a731271e-1a6d-498c-86a7-a82869426012"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="e5604ef2-e0d2-4b22-9d66-1302f3d2ba84">
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="a731271e-1a6d-498c-86a7-a82869426012"/>
+    <segmentIndex>1</segmentIndex>
+    <valueIndices>1</valueIndices>
+    <valueIndices>1</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="a62fd331-1fa7-4a34-b933-80838f0abe61">
     <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/PushIdx/Compare To Constant</blockPath>
     <name>Value</name>
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="7989aa9a-7453-41db-89d1-d19272930469"/>
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="8a04d011-11f8-44e1-8ea3-b026e262cf32"/>
   </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="3771bb97-375f-4d54-95e2-37703b14841f">
-    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="7989aa9a-7453-41db-89d1-d19272930469"/>
+  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="a690279d-8d4a-487c-88ec-23792bcd93c5">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="3d94d871-67c1-4bd2-b147-8d546f6feeea"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="96a38889-925d-42d6-8429-4abe279a2a48"/>
+  </slsa.mm.rtpregistry.FixedPointParameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="3d94d871-67c1-4bd2-b147-8d546f6feeea">
+    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/PopIdx/Compare To Constant</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="a690279d-8d4a-487c-88ec-23792bcd93c5"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="96a38889-925d-42d6-8429-4abe279a2a48">
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="a690279d-8d4a-487c-88ec-23792bcd93c5"/>
     <segmentIndex>1</segmentIndex>
-    <valueIndices>5</valueIndices>
-    <valueIndices>5</valueIndices>
+    <valueIndices>2</valueIndices>
+    <valueIndices>2</valueIndices>
   </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="1222f8ac-9db0-4c0e-98d2-9f6b79c57283">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="4f3d255a-06fe-4527-9917-36c3eec32702"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="b2ad856c-2506-4d40-93bc-d75444b14dca"/>
+  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="e1c55d03-c3cf-498d-bebb-e67c1d68814f">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="4118de55-8093-4896-b190-acc6554a8d86"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d1200239-6c34-444e-a710-bf1c6dea9c86"/>
+  </slsa.mm.rtpregistry.FixedPointParameter>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="d1c595eb-1580-486f-a8ca-dfd74f6c75fc">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="c348ef23-5c30-4fb5-83b2-81ddf3d9099b"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="2a886a1d-70c0-4632-ba14-f86200d86e38"/>
   </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="9256220d-3903-430b-9dd4-bb7a403f14a6">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="9388ecd5-3e07-48db-9b5e-9da0bceb4864"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d624f905-126d-4940-8930-f57b7e00f23c"/>
-  </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d624f905-126d-4940-8930-f57b7e00f23c">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="9256220d-3903-430b-9dd4-bb7a403f14a6"/>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d1200239-6c34-444e-a710-bf1c6dea9c86">
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="e1c55d03-c3cf-498d-bebb-e67c1d68814f"/>
+    <segmentIndex>1</segmentIndex>
+    <valueIndices>3</valueIndices>
+    <valueIndices>3</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="5072e449-9fee-4f52-8ce0-e94e493536b3">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="ba3215d9-b0d2-4343-8bec-f18a7b68149c"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="0e70d7ff-baad-4c56-81f7-3a46eeac66f7"/>
+  </slsa.mm.rtpregistry.FixedPointParameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="ba3215d9-b0d2-4343-8bec-f18a7b68149c">
+    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/PopIdx/Compare To Constant</blockPath>
+    <name>Value</name>
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="5072e449-9fee-4f52-8ce0-e94e493536b3"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="0e70d7ff-baad-4c56-81f7-3a46eeac66f7">
+    <parameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="5072e449-9fee-4f52-8ce0-e94e493536b3"/>
+    <segmentIndex>1</segmentIndex>
+    <valueIndices>4</valueIndices>
+    <valueIndices>4</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.FixedPointParameter type="slsa.mm.rtpregistry.FixedPointParameter" uuid="8a04d011-11f8-44e1-8ea3-b026e262cf32">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="a62fd331-1fa7-4a34-b933-80838f0abe61"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="e98198a6-7025-40b0-858b-7cee2b47b01b"/>
+  </slsa.mm.rtpregistry.FixedPointParameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="c348ef23-5c30-4fb5-83b2-81ddf3d9099b">
+    <blockPath>DUALportRAMinterface_v3/Counter Limited1/Wrap To Zero</blockPath>
+    <name>Threshold</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="d1c595eb-1580-486f-a8ca-dfd74f6c75fc"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="2a886a1d-70c0-4632-ba14-f86200d86e38">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="d1c595eb-1580-486f-a8ca-dfd74f6c75fc"/>
     <segmentIndex>1</segmentIndex>
     <valueIndices>14</valueIndices>
     <valueIndices>14</valueIndices>
   </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="1e55928f-0c3e-4b64-b70e-dcdcb7b425c4">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="bfce49c5-74c7-4d32-902d-7e4b9f7fd257"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="7dab15ac-17d7-46bf-901e-2f821b1557b5"/>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="97755cf8-494a-4955-b904-12d45576d76f">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="0c9e0866-2ee1-4e21-bb16-ec87667bdc6d"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="dc6e1c46-42b0-4475-9a09-6d4bd2e5063a"/>
   </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="bfce49c5-74c7-4d32-902d-7e4b9f7fd257">
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="0c9e0866-2ee1-4e21-bb16-ec87667bdc6d">
     <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/Upsample/Counter/Wrap To Zero</blockPath>
     <name>Threshold</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="1e55928f-0c3e-4b64-b70e-dcdcb7b425c4"/>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="97755cf8-494a-4955-b904-12d45576d76f"/>
   </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="7dab15ac-17d7-46bf-901e-2f821b1557b5">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="1e55928f-0c3e-4b64-b70e-dcdcb7b425c4"/>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="dc6e1c46-42b0-4475-9a09-6d4bd2e5063a">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="97755cf8-494a-4955-b904-12d45576d76f"/>
     <segmentIndex>2</segmentIndex>
     <valueIndices>0</valueIndices>
     <valueIndices>0</valueIndices>
   </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="19f8a89a-76a7-434c-912d-27e59b6d7cc9">
-    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/Upsample/Counter/Wrap To Zero</blockPath>
-    <name>Threshold</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="87595639-272e-4e1b-ab7a-2995f3215583"/>
-  </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="59e0ca11-28c5-4014-af00-a8e6e5543372">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="eba0ee6f-cb5b-4e08-8aeb-2c02dccb8ec9"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="645c43a1-e632-469f-90ef-5e88b376b765"/>
-  </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="ab84872f-f419-4cdb-b690-8bca1e0ab5c1">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="87595639-272e-4e1b-ab7a-2995f3215583"/>
-    <segmentIndex>2</segmentIndex>
-    <valueIndices>3</valueIndices>
-    <valueIndices>3</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="eba0ee6f-cb5b-4e08-8aeb-2c02dccb8ec9">
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="14230a37-894d-4f66-a2ef-5569fbd379c4">
     <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/Upsample1/Counter/Wrap To Zero</blockPath>
     <name>Threshold</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="59e0ca11-28c5-4014-af00-a8e6e5543372"/>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="c29a1e9c-052c-476e-a32b-cb6c274444bf"/>
   </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="cb390dc2-97b6-4b33-ade5-a355bb53eab0">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="e6826f7b-2c46-4fe2-80f5-b4332d8981ad"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d8a89275-cd7e-48c8-8a5f-439155f23086"/>
-  </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="e6826f7b-2c46-4fe2-80f5-b4332d8981ad">
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="dfb4fad9-7e5a-4e05-8576-924915d6c84b">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="c29a1e9c-052c-476e-a32b-cb6c274444bf"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>1</valueIndices>
+    <valueIndices>1</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="af69851a-51fc-4cdb-b75d-8b53dca30949">
     <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/Upsample2/Counter/Wrap To Zero</blockPath>
     <name>Threshold</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="cb390dc2-97b6-4b33-ade5-a355bb53eab0"/>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="27bcb6bd-496a-4c64-85ef-bcae2a14f60e"/>
   </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="d8a89275-cd7e-48c8-8a5f-439155f23086">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="cb390dc2-97b6-4b33-ade5-a355bb53eab0"/>
-    <segmentIndex>2</segmentIndex>
-    <valueIndices>2</valueIndices>
-    <valueIndices>2</valueIndices>
-  </slsa.mm.rtpregistry.RtpLocation>
-  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="47f3ca8c-bc89-435f-8b8b-66d1fa8054a0">
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="f4f9b78c-2597-4a00-8d85-b9a217d4de35">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="05247bda-7527-4655-8b93-802835aac940"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="012eca60-5a11-414f-81c5-0513d608e1b6"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="05247bda-7527-4655-8b93-802835aac940">
+    <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/Upsample/Counter/Wrap To Zero</blockPath>
+    <name>Threshold</name>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="f4f9b78c-2597-4a00-8d85-b9a217d4de35"/>
+  </slsa.mm.rtpregistry.BlockParameterId>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="d54da1f0-1bb7-44e3-af58-da2d7e62c246">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="0d701293-4300-4293-b9e7-ca960664200b"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="f72b3cda-5776-4649-a639-26367cd0059a"/>
+  </slsa.mm.rtpregistry.Parameter>
+  <slsa.mm.rtpregistry.BlockParameterId type="slsa.mm.rtpregistry.BlockParameterId" uuid="0d701293-4300-4293-b9e7-ca960664200b">
     <blockPath>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/Upsample1/Counter/Wrap To Zero</blockPath>
     <name>Threshold</name>
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="78683080-bd08-40ff-9aaa-122c6f46ddc3"/>
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="d54da1f0-1bb7-44e3-af58-da2d7e62c246"/>
   </slsa.mm.rtpregistry.BlockParameterId>
-  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="87595639-272e-4e1b-ab7a-2995f3215583">
-    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="19f8a89a-76a7-434c-912d-27e59b6d7cc9"/>
-    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="ab84872f-f419-4cdb-b690-8bca1e0ab5c1"/>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="f72b3cda-5776-4649-a639-26367cd0059a">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="d54da1f0-1bb7-44e3-af58-da2d7e62c246"/>
+    <segmentIndex>2</segmentIndex>
+    <valueIndices>4</valueIndices>
+    <valueIndices>4</valueIndices>
+  </slsa.mm.rtpregistry.RtpLocation>
+  <slsa.mm.rtpregistry.Parameter type="slsa.mm.rtpregistry.Parameter" uuid="bce0c5e6-42c8-4211-9556-dce6d37379a3">
+    <id type="slsa.mm.rtpregistry.BlockParameterId" uuid="67e17d10-4aeb-4d4f-b292-5499bc5d4c2c"/>
+    <rtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="362daaf6-8730-48c9-a40e-90991d87140a"/>
   </slsa.mm.rtpregistry.Parameter>
-  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="b2ad856c-2506-4d40-93bc-d75444b14dca">
-    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="1222f8ac-9db0-4c0e-98d2-9f6b79c57283"/>
+  <slsa.mm.rtpregistry.RtpLocation type="slsa.mm.rtpregistry.RtpLocation" uuid="362daaf6-8730-48c9-a40e-90991d87140a">
+    <parameter type="slsa.mm.rtpregistry.Parameter" uuid="bce0c5e6-42c8-4211-9556-dce6d37379a3"/>
     <segmentIndex>2</segmentIndex>
     <valueIndices>5</valueIndices>
     <valueIndices>5</valueIndices>

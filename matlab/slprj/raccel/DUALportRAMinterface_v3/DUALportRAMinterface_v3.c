@@ -4852,7 +4852,7 @@ rtB . ak2vxsyixd = true ; rtB . m5q1do0vmq = false ; break ; case eisvyocwb5
 o3tyeeowqy = false ; rtB . fviw5wizdj = false ; rtB . g5l3a2xe55 = 0U ; rtB .
 dqgaqsoxml = false ; rtB . ooqxabrlh0 = false ; rtB . ppe24ahxyy = false ;
 rtB . ak2vxsyixd = true ; rtB . m5q1do0vmq = false ; break ; case bplz1bgu04
-: if ( rtB . oleysdr0yd == 50 ) { rtDW . fotv1vmuhj = kh3hkei35g ; rtB .
+: if ( rtB . oleysdr0yd == 1000 ) { rtDW . fotv1vmuhj = kh3hkei35g ; rtB .
 eezqixq4vm = true ; } else { rtDW . fotv1vmuhj = lwrsi20zvv ; rtB .
 m5q1do0vmq = true ; rtB . ak2vxsyixd = true ; rtB . fclpv43io0 = false ; rtB
 . ooqxabrlh0 = false ; } break ; case bhhada5sju : rtB . ak2vxsyixd = false ;
@@ -9259,9 +9259,9 @@ return data ; } void MdlInitializeSizes ( void ) { ssSetNumContStates ( rtS ,
 ; ssSetNumBlockIO ( rtS , 462 ) ; ssSetNumBlockParams ( rtS , 25033 ) ; }
 void MdlInitializeSampleTimes ( void ) { ssSetSampleTime ( rtS , 0 ,
 7.5000750007500074E-6 ) ; ssSetOffsetTime ( rtS , 0 , 0.0 ) ; } void
-raccel_set_checksum ( ) { ssSetChecksumVal ( rtS , 0 , 2084735353U ) ;
-ssSetChecksumVal ( rtS , 1 , 3922637197U ) ; ssSetChecksumVal ( rtS , 2 ,
-527225216U ) ; ssSetChecksumVal ( rtS , 3 , 1086068622U ) ; }
+raccel_set_checksum ( ) { ssSetChecksumVal ( rtS , 0 , 3114469721U ) ;
+ssSetChecksumVal ( rtS , 1 , 86150490U ) ; ssSetChecksumVal ( rtS , 2 ,
+2369341710U ) ; ssSetChecksumVal ( rtS , 3 , 1147297213U ) ; }
 #if defined(_MSC_VER)
 #pragma optimize( "", off )
 #endif
@@ -9311,38 +9311,38 @@ DUALportRAMinterface_v3_InitializeDataMapInfo ( ) ;
 ssSetIsRapidAcceleratorActive ( rtS , true ) ; ssSetRootSS ( rtS , rtS ) ;
 ssSetVersion ( rtS , SIMSTRUCT_VERSION_LEVEL2 ) ; ssSetModelName ( rtS ,
 "DUALportRAMinterface_v3" ) ; ssSetPath ( rtS , "DUALportRAMinterface_v3" ) ;
-ssSetTStart ( rtS , 0.0 ) ; ssSetTFinal ( rtS , 200.0 ) ; ssSetStepSize ( rtS
-, 7.5000750007500074E-6 ) ; ssSetFixedStepSize ( rtS , 7.5000750007500074E-6
-) ; { static RTWLogInfo rt_DataLoggingInfo ; rt_DataLoggingInfo .
-loggingInterval = ( NULL ) ; ssSetRTWLogInfo ( rtS , & rt_DataLoggingInfo ) ;
-} { { static int_T rt_LoggedStateWidths [ ] = { 12292 , 12292 , 1 , 1 , 1 , 1
+ssSetTStart ( rtS , 0.0 ) ; ssSetTFinal ( rtS , 1100.0 ) ; ssSetStepSize (
+rtS , 7.5000750007500074E-6 ) ; ssSetFixedStepSize ( rtS ,
+7.5000750007500074E-6 ) ; { static RTWLogInfo rt_DataLoggingInfo ;
+rt_DataLoggingInfo . loggingInterval = ( NULL ) ; ssSetRTWLogInfo ( rtS , &
+rt_DataLoggingInfo ) ; } { { static int_T rt_LoggedStateWidths [ ] = { 12292
+, 12292 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 6146 , 1 , 1 ,
+1 , 1 , 1 , 1 , 1 , 1 , 16 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 6145 , 1 ,
+2048 , 1 , 1 , 6144 , 2048 , 1 , 6144 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 4032 , 63 ,
+1 , 1 , 1 , 1 , 1 , 1 } ; static int_T rt_LoggedStateNumDimensions [ ] = { 1
 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
-, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 6146 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
-16 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 6145 , 1 , 2048 , 1 , 1 , 6144 ,
-2048 , 1 , 6144 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
-1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 4032 , 63 , 1 , 1 , 1 , 1 , 1 , 1
-} ; static int_T rt_LoggedStateNumDimensions [ ] = { 1 , 1 , 1 , 1 , 1 , 1 ,
+, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
+1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 } ;
+static int_T rt_LoggedStateDimensions [ ] = { 12292 , 12292 , 1 , 1 , 1 , 1 ,
 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
-1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
-, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
-1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
-, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 } ; static int_T
-rt_LoggedStateDimensions [ ] = { 12292 , 12292 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
-1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
-, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
-1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
-, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 ,
-1 , 1 , 1 , 1 , 1 , 1 , 6146 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 16 , 1 , 1 , 1
-, 1 , 1 , 1 , 1 , 1 , 1 , 6145 , 1 , 2048 , 1 , 1 , 6144 , 2048 , 1 , 6144 ,
-1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
-, 1 , 1 , 1 , 1 , 1 , 1 , 4032 , 63 , 1 , 1 , 1 , 1 , 1 , 1 } ; static
-boolean_T rt_LoggedStateIsVarDims [ ] = { 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,
+1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 6146 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 16
+, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 6145 , 1 , 2048 , 1 , 1 , 6144 , 2048 ,
+1 , 6144 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1
+, 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 1 , 4032 , 63 , 1 , 1 , 1 , 1 , 1 , 1 } ;
+static boolean_T rt_LoggedStateIsVarDims [ ] = { 0 , 0 , 0 , 0 , 0 , 0 , 0 ,
 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0
 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,
 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0
@@ -9350,7 +9350,7 @@ boolean_T rt_LoggedStateIsVarDims [ ] = { 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,
 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0
 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 ,
 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0
-, 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 } ; static BuiltInDTypeId
+, 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 , 0 } ; static BuiltInDTypeId
 rt_LoggedStateDataTypeIds [ ] = { SS_DOUBLE , SS_DOUBLE , SS_DOUBLE ,
 SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE ,
 SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE , SS_DOUBLE ,
@@ -10038,8 +10038,8 @@ ssSetSolverMassMatrixNzMax ( rtS , 0 ) ; ssSetModelOutputs ( rtS , MdlOutputs
 ) ; ssSetModelUpdate ( rtS , MdlUpdate ) ; ssSetTNextTid ( rtS , INT_MIN ) ;
 ssSetTNext ( rtS , rtMinusInf ) ; ssSetSolverNeedsReset ( rtS ) ;
 ssSetNumNonsampledZCs ( rtS , 0 ) ; } ssSetChecksumVal ( rtS , 0 ,
-2084735353U ) ; ssSetChecksumVal ( rtS , 1 , 3922637197U ) ; ssSetChecksumVal
-( rtS , 2 , 527225216U ) ; ssSetChecksumVal ( rtS , 3 , 1086068622U ) ; {
+3114469721U ) ; ssSetChecksumVal ( rtS , 1 , 86150490U ) ; ssSetChecksumVal (
+rtS , 2 , 2369341710U ) ; ssSetChecksumVal ( rtS , 3 , 1147297213U ) ; {
 static const sysRanDType rtAlwaysEnabled = SUBSYS_RAN_BC_ENABLE ; static
 RTWExtModeInfo rt_ExtModeInfo ; static const sysRanDType * systemRan [ 425 ]
 ; gblRTWExtModeInfo = & rt_ExtModeInfo ; ssSetRTWExtModeInfo ( rtS , &

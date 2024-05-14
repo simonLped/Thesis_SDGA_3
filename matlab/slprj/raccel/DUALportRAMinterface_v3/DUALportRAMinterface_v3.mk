@@ -2,7 +2,7 @@
 ## Makefile generated for component 'DUALportRAMinterface_v3'. 
 ## 
 ## Makefile     : DUALportRAMinterface_v3.mk
-## Generated on : Sun May 12 17:52:49 2024
+## Generated on : Mon May 13 07:52:12 2024
 ## Final product: ./DUALportRAMinterface_v3.exe
 ## Product type : executable
 ## 
@@ -23,7 +23,7 @@ MAKEFILE                  = DUALportRAMinterface_v3.mk
 MATLAB_ROOT               = C:/PROGRA~1/MATLAB/R2024a
 MATLAB_BIN                = C:/PROGRA~1/MATLAB/R2024a/bin
 MATLAB_ARCH_BIN           = $(MATLAB_BIN)/win64
-START_DIR                 = C:/Users/Simon/Documents/Thesis_SDGA_2/matlab
+START_DIR                 = C:/Users/Simon/Documents/Thesis_SDGA_3/matlab
 SOLVER                    = 
 SOLVER_OBJ                = 
 CLASSIC_INTERFACE         = 1

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <MF0 version="1.1" packageUris="http://schema.mathworks.com/mf0/ci/19700101 http://schema.mathworks.com/mf0/sl_modelref_info/R2024a http://schema.mathworks.com/mf0/slexec_mm_sto/R2024a_202305081229 http://schema.mathworks.com/mf0/sltp_mm/R2023a_202209151115">
-  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="411f204d-710f-4127-ac31-d9471c6f52b2">
+  <ModelRefInfoRepo.ModelRefInfoRoot type="ModelRefInfoRepo.ModelRefInfoRoot" uuid="07964f82-9807-44b3-a890-f058f66b8b25">
     <JITEngines>s09LSqaY4uJWY5xZ4iQnY9G</JITEngines>
     <JITEngines>s0BcotPCIWuSvc8anUHXVOD</JITEngines>
+    <JITEngines>s0OykTCd4kCjG43QHdYG7eB</JITEngines>
     <JITEngines>s0bBWLyp9d9XSYwvXyMKK5B</JITEngines>
     <JITEngines>s0pmT58TU4aUuUm4tmSTcgD</JITEngines>
     <JITEngines>s17ImeOQT1Gc89tir7tbiGD</JITEngines>
     <JITEngines>s1cEl48elrYyEAzIHpgC9fG</JITEngines>
-    <JITEngines>s2MMU3zbdqdk1JUVTCreag</JITEngines>
     <JITEngines>s2WbStzZI9vcY3y9WM5iY3E</JITEngines>
     <JITEngines>s3CFGF8u3RiSc5Xn10FynWD</JITEngines>
     <JITEngines>s3OJVJD8uXzAYm5IIYufus</JITEngines>
@@ -106,18 +106,18 @@
     <JITEngines>sz8FKTZjFTY9MeTHRGRWfJD</JITEngines>
     <JITEngines>szi4HJBbZJbhJUnrmgL2EtB</JITEngines>
     <JITEngines>szoxT8M0Cjhk6H0t4WuN2SB</JITEngines>
-    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="fa906516-7a86-4cab-9dc6-d122a165e6c0">
+    <childModelRefInfo type="ModelRefInfoRepo.ChildModelRefInfo" uuid="52724253-dc65-4b86-9f87-4bc391d085c8">
       <modelName>DUALportRAMinterface_v3</modelName>
       <modelPath>DUALportRAMinterface_v3</modelPath>
     </childModelRefInfo>
-    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="167765ac-cf11-438f-8a63-eef76b56e088">
+    <clockResolutions type="ModelRefInfoRepo.ClockResolutionInfo" uuid="8bc54fbc-f93a-4e8c-a049-934c6f1ec318">
       <rateIdx>0</rateIdx>
       <resolution>7.500075000750007e-06</resolution>
       <source>DeducedFromSampleTime</source>
     </clockResolutions>
-    <compiledTFinal>200.0</compiledTFinal>
-    <dataSourceInfo type="ModelRefInfoRepo.DataSourceInfo" uuid="1f0d86b5-18c8-4199-a739-108ce264fd1c">
-      <dataSources type="ModelRefInfoRepo.SourceInfo" uuid="cd600fb8-d6e8-4c74-b983-5db1d568aa86">
+    <compiledTFinal>1100.0</compiledTFinal>
+    <dataSourceInfo type="ModelRefInfoRepo.DataSourceInfo" uuid="6fe502fa-0a43-4ad7-a1e4-52574d489bbb">
+      <dataSources type="ModelRefInfoRepo.SourceInfo" uuid="2b7b7a49-d38e-48ac-bf46-8c0fd8a29a04">
         <includeAllSections>true</includeAllSections>
         <sourceName>base workspace</sourceName>
         <type>BaseWorkspace</type>
@@ -161,51 +161,51 @@
     <solverStatusFlags>331</solverStatusFlags>
     <timingAndTaskingRegistry>&lt;?xml version=&quot;1.0&quot;?&gt;
 &lt;slexec_sto version=&quot;1.1&quot; packageUris=&quot;http://schema.mathworks.com/mf0/slexec_mm_sto/R2024a_202305081229&quot;&gt;
-  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;d2fa6444-0848-43a5-9981-010db4980f76&quot;&gt;
+  &lt;sto.Registry type=&quot;sto.Registry&quot; uuid=&quot;471a0d6d-b314-47ea-800c-f12e4677e341&quot;&gt;
     &lt;executionSpec&gt;Undetermined&lt;/executionSpec&gt;
     &lt;identifier&gt;DUALportRAMinterface_v3&lt;/identifier&gt;
-    &lt;clockRegistry type=&quot;sto.ClockRegistry&quot; uuid=&quot;79ad368e-6548-4be9-b41b-9b423caf16fc&quot;&gt;
-      &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;832a347e-6437-4725-866a-f830376e95bb&quot;&gt;
+    &lt;clockRegistry type=&quot;sto.ClockRegistry&quot; uuid=&quot;2b5b2316-cd06-4fe1-8ef2-9011f34c4422&quot;&gt;
+      &lt;clocks type=&quot;sto.Timer&quot; uuid=&quot;d61554b4-5e5a-470b-95e0-578f937f945e&quot;&gt;
         &lt;computedFundamentalDiscretePeriod&gt;7.500075000750007e-06&lt;/computedFundamentalDiscretePeriod&gt;
-        &lt;fastestDiscreteRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;75bbbdf1-2b9f-4661-8575-0a6cab8dfd85&quot;/&gt;
+        &lt;fastestDiscreteRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;29a8699f-e010-4f2a-a5e1-134f9c557455&quot;/&gt;
         &lt;isDefaultTimer&gt;true&lt;/isDefaultTimer&gt;
         &lt;resolution&gt;7.500075000750007e-06&lt;/resolution&gt;
         &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
         &lt;identifier&gt;DUALportRAMinterface_v3::defaultTimer&lt;/identifier&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;75bbbdf1-2b9f-4661-8575-0a6cab8dfd85&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;29a8699f-e010-4f2a-a5e1-134f9c557455&quot;&gt;
           &lt;annotation&gt;D1&lt;/annotation&gt;
           &lt;clockId&gt;DUALportRAMinterface_v3::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Discrete 1&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;8dd60f91-5a76-4545-b208-3eca571d61aa&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;03fee0bd-1af3-4bc7-a342-6379cf108ff8&quot;&gt;
             &lt;period&gt;7.500075000750007e-06&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/rates&gt;
-        &lt;baseRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;2463718c-6018-457a-b426-bac3078ee8d2&quot;&gt;
+        &lt;baseRate type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;3cf345a2-1673-4f19-b412-47e3ab36e524&quot;&gt;
           &lt;annotation&gt;D1&lt;/annotation&gt;
           &lt;clockId&gt;DUALportRAMinterface_v3::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Discrete 1&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;f102e5a3-1bb0-44dd-951f-6b94258e5656&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;f4d1094a-23e0-4183-bae0-87803f3cd30b&quot;&gt;
             &lt;period&gt;7.500075000750007e-06&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
         &lt;/baseRate&gt;
       &lt;/clocks&gt;
-      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;97391cb2-5b3f-4a57-b935-3a45ca68cefd&quot;&gt;
+      &lt;clocks type=&quot;sto.Event&quot; uuid=&quot;82256a5f-a170-4775-93c5-77be5c935b81&quot;&gt;
         &lt;eventType&gt;PARAMETER_CHANGE_EVENT&lt;/eventType&gt;
         &lt;cNum&gt;1&lt;/cNum&gt;
         &lt;clockType&gt;Event&lt;/clockType&gt;
         &lt;identifier&gt;ParameterChangeEvent&lt;/identifier&gt;
-        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;e35295ad-da94-4ceb-81d9-d3b101906e3e&quot;&gt;
+        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;afa6f785-e494-4a3d-b98f-2540cd9b0dcb&quot;&gt;
           &lt;annotation&gt;Inf&lt;/annotation&gt;
           &lt;clockId&gt;ParameterChangeEvent&lt;/clockId&gt;
           &lt;colorIndex&gt;-1&lt;/colorIndex&gt;
           &lt;description&gt;Constant&lt;/description&gt;
           &lt;rateIdx&gt;1&lt;/rateIdx&gt;
           &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;754af2fb-a3d2-46bc-9897-28a28ec92b3c&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;b5ba6c42-ed5b-4a4e-b55e-e0e74775f795&quot;&gt;
             &lt;period&gt;inf&lt;/period&gt;
             &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -213,19 +213,19 @@
       &lt;/clocks&gt;
       &lt;timeAdvanceMode&gt;FixedStep&lt;/timeAdvanceMode&gt;
     &lt;/clockRegistry&gt;
-    &lt;taskRegistry type=&quot;sto.TaskRegistry&quot; uuid=&quot;efbb02f9-dd82-4e9c-9c0b-c1de68fe4bcc&quot;&gt;
+    &lt;taskRegistry type=&quot;sto.TaskRegistry&quot; uuid=&quot;ec1e85af-0364-4fc0-946b-4fd101ad6925&quot;&gt;
       &lt;hasUnknownEdges&gt;true&lt;/hasUnknownEdges&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;2ad2bd78-5df8-4dde-8d2b-e240135c5d36&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;d1f46ec5-63eb-456d-b637-c9ee04898e13&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;isExplicit&gt;true&lt;/isExplicit&gt;
-        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;003c4851-df42-4411-8bc0-5f4b7668217b&quot;&gt;
+        &lt;rates type=&quot;sto.ModelWideEventRate&quot; uuid=&quot;75f49786-6f61-4a10-af35-9766ec17c8e3&quot;&gt;
           &lt;annotation&gt;Inf&lt;/annotation&gt;
           &lt;clockId&gt;ParameterChangeEvent&lt;/clockId&gt;
           &lt;colorIndex&gt;-1&lt;/colorIndex&gt;
           &lt;description&gt;Constant&lt;/description&gt;
           &lt;rateIdx&gt;1&lt;/rateIdx&gt;
           &lt;taskId&gt;ModelWideParameterChangeEvent&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;a98d748f-0734-45bd-8a72-1c155f98e325&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;8fa5d75d-b93e-4101-ba3a-3d1e63f54c4a&quot;&gt;
             &lt;period&gt;inf&lt;/period&gt;
             &lt;rateType&gt;ModelWideParameterChangeEvent&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -237,15 +237,15 @@
         &lt;identifier&gt;ModelWideParameterChangeEvent&lt;/identifier&gt;
         &lt;priority&gt;-1&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;79112b09-20dc-42f2-95b4-3f4fc3dc0777&quot;&gt;
+      &lt;rootTaskHierarchyElements type=&quot;sto.Task&quot; uuid=&quot;a53537ab-610e-4bc2-baa6-8f8334dcf7c6&quot;&gt;
         &lt;isExecutable&gt;true&lt;/isExecutable&gt;
         &lt;orderIndex&gt;1&lt;/orderIndex&gt;
-        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;80e9dafa-99f1-46f1-9947-2c0875938c9f&quot;&gt;
+        &lt;rates type=&quot;sto.ClassicPeriodicDiscreteRate&quot; uuid=&quot;79cdd257-742e-4747-be05-8558d1def930&quot;&gt;
           &lt;annotation&gt;D1&lt;/annotation&gt;
           &lt;clockId&gt;DUALportRAMinterface_v3::defaultTimer&lt;/clockId&gt;
           &lt;description&gt;Discrete 1&lt;/description&gt;
           &lt;taskId&gt;_task0&lt;/taskId&gt;
-          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;22817f35-6695-4b54-a401-b8dba0b60fb3&quot;&gt;
+          &lt;rateSpec type=&quot;sto.RateSpec&quot; uuid=&quot;7050de4e-3a9c-44f3-a8fd-fa4a6c7300ef&quot;&gt;
             &lt;period&gt;7.500075000750007e-06&lt;/period&gt;
             &lt;rateType&gt;ClassicPeriodicDiscrete&lt;/rateType&gt;
           &lt;/rateSpec&gt;
@@ -256,13 +256,13 @@
         &lt;identifier&gt;_task0&lt;/identifier&gt;
         &lt;priority&gt;40&lt;/priority&gt;
       &lt;/rootTaskHierarchyElements&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;e0069f81-9ff9-4a2c-807e-d3c4dfb644d9&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;55a90346-be5a-4b26-baee-98456b68f048&quot;&gt;
         &lt;clockIdentifier&gt;DUALportRAMinterface_v3::defaultTimer&lt;/clockIdentifier&gt;
         &lt;taskIdentifier&gt;_task0&lt;/taskIdentifier&gt;
       &lt;/taskDependencyGraph&gt;
-      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;187984a2-d912-406a-a7d7-522a1a21a96a&quot;&gt;
+      &lt;taskDependencyGraph type=&quot;sto.SerializedTaskConnectionList&quot; uuid=&quot;1a70c2e1-1728-43b2-89e9-02e7d1e7b267&quot;&gt;
         &lt;clockIdentifier&gt;ParameterChangeEvent&lt;/clockIdentifier&gt;
-        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;c4a77f5b-e0ec-4f6e-a128-0e1df8be9022&quot;&gt;
+        &lt;serializedConnectionProperties type=&quot;sto.SerializedConnectionProperties&quot; uuid=&quot;94fbe665-0657-41ef-901b-c480cf377ffc&quot;&gt;
           &lt;targetClockIdentifier&gt;DUALportRAMinterface_v3::defaultTimer&lt;/targetClockIdentifier&gt;
           &lt;targetTaskIdentifier&gt;_task0&lt;/targetTaskIdentifier&gt;
         &lt;/serializedConnectionProperties&gt;
@@ -272,10 +272,10 @@
     &lt;/taskRegistry&gt;
   &lt;/sto.Registry&gt;
 &lt;/slexec_sto&gt;</timingAndTaskingRegistry>
-    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="c01a8ff3-724c-4626-b2e8-dc2632409e3c"/>
-    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="af20c15b-0dd0-4c76-921c-0dc66831768c"/>
-    <compiledVariantInfos type="ModelRefInfoRepo.CompiledVariantInfoMap" uuid="5a965daa-2440-4bb2-b7ce-feea957710c7"/>
-    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="640ffb24-5f8f-42ca-8617-edddfbb6ca00">
+    <FMUBlockMap type="ModelRefInfoRepo.FMUBlockInfo" uuid="3739992e-e162-440b-82a7-8442af4775aa"/>
+    <codeGenInfo type="ModelRefInfoRepo.CodeGenInformation" uuid="7e116e19-e3bf-41b8-bfa6-53cb84193ef6"/>
+    <compiledVariantInfos type="ModelRefInfoRepo.CompiledVariantInfoMap" uuid="d26bd400-f09a-4864-927b-f045121324d4"/>
+    <configSettingsForConsistencyChecks type="ModelRefInfoRepo.ConfigSettingsForConsistencyChecks" uuid="8ebf9335-caf3-4edb-b4b5-848cbc470340">
       <consistentOutportInitialization>true</consistentOutportInitialization>
       <fixedStepSize>7.500075000750007e-06</fixedStepSize>
       <frameDiagnosticSetting>2</frameDiagnosticSetting>
@@ -284,7 +284,7 @@
       <simSIMDOptimization>1</simSIMDOptimization>
       <solverName>FixedStepDiscrete</solverName>
       <solverType>SOLVER_TYPE_FIXEDSTEP</solverType>
-      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="cfc7357e-d123-4317-af5b-f7c4cd2476f1">
+      <hardwareSettings type="ModelRefInfoRepo.HardwareSettings" uuid="0e86576e-ba2a-40e9-9be2-f78253a6a3b0">
         <prodBitPerChar>8</prodBitPerChar>
         <prodBitPerDouble>64</prodBitPerDouble>
         <prodBitPerFloat>32</prodBitPerFloat>
@@ -301,12 +301,12 @@
         <prodWordSize>32</prodWordSize>
       </hardwareSettings>
     </configSettingsForConsistencyChecks>
-    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="027c1e3f-1783-409c-8110-6b007c5149d9"/>
-    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="26aac4c7-3887-4664-b47c-bf6b50cc9e82"/>
-    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="132c5b5c-4b38-4def-a2e0-dbc5b58c7b3e"/>
-    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="f4e7fd94-48f7-46cb-847b-6cd6be982867"/>
-    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="70c08c0c-df58-4f31-bc2d-054bb46b2810">
-      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="2d5d4f14-91c9-46df-9ee1-9752404506f0">
+    <controllableInputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="1ef61cc1-f679-448d-865b-086f94d263f8"/>
+    <controllableOutputRatesMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="c023718a-6b94-4848-8b25-4328f7cdfea1"/>
+    <dataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="ffc7bbf2-e5f9-4676-9944-1c9c8d54e54a"/>
+    <expFcnUnconnectedDataPortGroup type="ModelRefInfoRepo.DataPortGroup" uuid="c3efe3f7-353d-4fc3-9154-3b5578fb9fbf"/>
+    <interfaceParameterInfo type="ModelRefInfoRepo.InterfaceParameterInfo" uuid="cba861e9-066c-444a-af91-395c62fc17f4">
+      <globalVariables type="ModelRefInfoRepo.BuiltinParameter" uuid="1ad7680d-a254-4ca3-a671-b05ea58bf4bf">
         <dimensions>1</dimensions>
         <dimensions>1</dimensions>
         <isUsed>true</isUsed>
@@ -315,32 +315,32 @@
         <parameterName>Ts</parameterName>
       </globalVariables>
     </interfaceParameterInfo>
-    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="e72aa977-a13a-40ac-93d8-8b0b9a800362"/>
-    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="27531417-7117-4b3a-b85a-85e58d48a1fb">
+    <messageInfo type="ModelRefInfoRepo.MessageInformation" uuid="d160a15a-3450-49a9-a058-97ce04ed07d5"/>
+    <methodInfo type="ModelRefInfoRepo.MethodExistenceInfo" uuid="d4cbafea-1f99-437d-97df-390d115743b4">
       <hasDisableMethod>true</hasDisableMethod>
       <hasSystemInitializeMethod>true</hasSystemInitializeMethod>
       <hasSystemResetMethod>true</hasSystemResetMethod>
       <hasTerminateMethod>true</hasTerminateMethod>
       <hasUpdateMethod>true</hasUpdateMethod>
     </methodInfo>
-    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="83ee7df5-2cff-426e-857e-85e3b890e220">
+    <periodicEventPortUnsupportedBlockInfo type="ModelRefInfoRepo.PeriodicEventPortUnsupportedBlockInfo" uuid="9dea5ca2-6f11-47e0-b9a9-bc5f6996b1a9">
       <deterministicRTBs>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system1/HDL FIFO1/Downsample</deterministicRTBs>
       <deterministicRTBs>DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/HDL FIFO1/Downsample</deterministicRTBs>
     </periodicEventPortUnsupportedBlockInfo>
-    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="2fdbd9c4-26e2-4ad2-9888-15c1e8d30e66">
-      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="a00d1b3c-789f-4b3f-a910-f245ab0b69a4"/>
-      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="b2fe291c-b60c-40a9-b778-db1c9a13e550"/>
-      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="5cae3659-f8f4-4f18-8ae7-ba8a1c0b48d5"/>
+    <portGroupsRequireSameRate type="ModelRefInfoRepo.PortGroupsRequireSameRate" uuid="c2aa6084-2896-418c-af4e-f0d778928479">
+      <DSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="323b1d1e-48da-4a81-b4e8-04a5af78e897"/>
+      <GlobalDSMPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="ee940053-0713-42b1-b0fa-d1f4d603ae46"/>
+      <mergedPortGroups type="ModelRefInfoRepo.NameToPortGroupIdxVectMap" uuid="b5d0157f-0926-4e89-817e-07a64ce04681"/>
     </portGroupsRequireSameRate>
-    <rateBasedMdlGlobalDSMRateSpec type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="6d9cb3d9-0f04-4d49-b670-66b0bfc6bc6d"/>
-    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="ea408693-7ce0-4c95-8b48-1d3df58e4502"/>
-    <rootBlockDiagramInterface type="ci.Model" uuid="a60bef96-f71c-49a0-873f-06e1987dae67">
-      <p_RootComponentInterface type="ci.ComponentInterface" uuid="0106f19a-5ba3-4c19-bb4d-0983fa35e1c2">
+    <rateBasedMdlGlobalDSMRateSpec type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="06097718-efd5-4c04-b0ae-baeccab7b435"/>
+    <rateSpecOfGlobalDSMAccessedByDescExpFcnMdlMap type="ModelRefInfoRepo.GlobalDSMRateSpecMap" uuid="7c3a6f8d-ef7d-44fe-aaf7-0804321bc15e"/>
+    <rootBlockDiagramInterface type="ci.Model" uuid="4d48e5a2-793b-40c0-a158-137f8a67428a">
+      <p_RootComponentInterface type="ci.ComponentInterface" uuid="d33e4f82-cdc1-4053-a1dd-b25fe7ccb265">
         <p_Name>DUALportRAMinterface_v3</p_Name>
         <p_Type>ROOT</p_Type>
       </p_RootComponentInterface>
     </rootBlockDiagramInterface>
-    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="ec65acd1-dbab-4992-9ae8-e70bff2f427c">
+    <simulinkFunctions type="ModelRefInfoRepo.SimulinkFunctions" uuid="e1addaa5-e247-46fc-ac52-8a0e6e00b757">
       <compSimulinkFunctionCatalog></compSimulinkFunctionCatalog>
     </simulinkFunctions>
     <sltpContext type="sltp.mm.core.Context" uuid="61bfdec7-af67-4ae6-a60b-880951d1fcb8">
@@ -379,19 +379,19 @@
         </subgraph>
       </rootTask>
     </sltpContext>
-    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="673058d2-a350-48b5-8d89-45d507169671"/>
-    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="305381a1-c025-4c24-a070-3156eb3ecb01">
-      <dataSets type="sto.ClientClockNamedDataSet" uuid="1fd237b8-2f92-4eef-8f63-b7cdf44f362a">
+    <stateWriterToOwnerMap type="ModelRefInfoRepo.StateWriterInfo" uuid="3d49cdca-392a-46db-a297-2d477f8bf87e"/>
+    <stoClientDataRegistry type="sto.ClientDataRegistry" uuid="6ee2502c-d2da-410b-b72a-47656edfa7eb">
+      <dataSets type="sto.ClientClockNamedDataSet" uuid="b6fd61c4-6015-40ec-b4c8-1e7e950c8cad">
         <tag>sltpEvents</tag>
       </dataSets>
-      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="8c6b727b-4224-4b3f-b25a-a43a1034bdda">
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="3422ce49-15f7-47a0-9c75-2458224b1678">
         <tag>sltpTaskGroups</tag>
       </dataSets>
-      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="89423b7c-e7a7-4d46-8e9b-70fc90cc1cbd">
-        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="0e29d4ad-8ae9-400a-9ec1-aecefa8f6979"/>
-        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="0e29d4ad-8ae9-400a-9ec1-aecefa8f6979">
+      <dataSets type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="521c3fda-f3fa-4ec8-9b96-4bd5c8a05f31">
+        <dSet type="ModelRefInfoRepo.SltpTaskData" uuid="22925996-2f24-4e2d-bd04-f53b8cddd8ba"/>
+        <tSet type="ModelRefInfoRepo.SltpTaskData" uuid="22925996-2f24-4e2d-bd04-f53b8cddd8ba">
           <dataName>D1</dataName>
-          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="89423b7c-e7a7-4d46-8e9b-70fc90cc1cbd"/>
+          <linkedSet type="sto.ClientTaskHierarchyElementNamedDataSet" uuid="521c3fda-f3fa-4ec8-9b96-4bd5c8a05f31"/>
           <id type="sto.TaskHierarchyElementId">
             <clockId>DUALportRAMinterface_v3::defaultTimer</clockId>
             <id>_task0</id>
@@ -400,361 +400,361 @@
         <tag>sltpTasks</tag>
       </dataSets>
     </stoClientDataRegistry>
-    <typeTable type="type_info.TypeTable" uuid="9f9c2636-58ad-4337-b7ee-e2b1dd5800c8">
-      <Types type="type_info.Type" uuid="59d374aa-ad25-4cad-9d48-4ba527bebbd7">
+    <typeTable type="type_info.TypeTable" uuid="3d186069-68f5-4ef6-b004-75d61574970b">
+      <Types type="type_info.Type" uuid="e77810e4-4d78-4b6b-8967-9601a32e18e8">
         <Name>action</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="d3838178-cf96-4a3b-b0c3-00d55fa46c01">
+      <Types type="type_info.NumericType" uuid="1e954318-2535-4a3f-a837-6cfbd253e876">
         <MxClassId>3</MxClassId>
         <Size>1</Size>
         <typeEnum>NUMERIC</typeEnum>
         <Name>boolean</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="d23c1c32-e003-410f-83d1-e5ccf5d3108f">
+      <Types type="type_info.NumericType" uuid="4d1e0e8c-959d-4f08-a92c-f6f104bc6fe0">
         <DataTypeId>1</DataTypeId>
         <MxClassId>6</MxClassId>
         <Size>8</Size>
         <typeEnum>NUMERIC</typeEnum>
         <Name>double</Name>
       </Types>
-      <Types type="type_info.Type" uuid="8fe36b90-fcbf-4c0f-bf15-532c55d8362d">
+      <Types type="type_info.Type" uuid="ca90024d-0e36-4e25-8035-7fff123b3e27">
         <DataTypeId>56</DataTypeId>
         <Size>1900760</Size>
         <Name>dsphdl_FFT2</Name>
       </Types>
-      <Types type="type_info.Type" uuid="40e46148-e37c-4782-aef1-7d719151c4b7">
+      <Types type="type_info.Type" uuid="1b4f6aba-6743-4bfb-8e0a-a85ca67ba56a">
         <Name>fcn_call</Name>
       </Types>
-      <Types type="type_info.Type" uuid="8f04ae9c-3fb7-419a-b6f0-6fb685913e58">
+      <Types type="type_info.Type" uuid="355b2510-0e23-40fb-8767-4659a0a914bc">
         <DataTypeId>59</DataTypeId>
         <Size>96</Size>
         <Name>fixed_system_internal_modbyconstant_hdl4</Name>
       </Types>
-      <Types type="type_info.Type" uuid="79d49d9b-722e-4a02-a09f-467d91dc1494">
+      <Types type="type_info.Type" uuid="43abfed4-11f3-458a-a0f4-76cb66497329">
         <DataTypeId>60</DataTypeId>
         <Size>96</Size>
         <Name>fixed_system_internal_modbyconstant_hdl5</Name>
       </Types>
-      <Types type="type_info.Type" uuid="07b154c3-a71d-45d2-91d9-1fc84fefc780">
+      <Types type="type_info.Type" uuid="4ddd039b-7d13-4dea-bc61-30c4dcbb09dc">
         <DataTypeId>61</DataTypeId>
         <Size>96</Size>
         <Name>fixed_system_internal_modbyconstant_hdl6</Name>
       </Types>
-      <Types type="type_info.Type" uuid="f8786d3b-98ee-48b5-8e75-2c0eca9faad1">
+      <Types type="type_info.Type" uuid="61fce284-aad7-4eb2-8549-470a1cc0eefd">
         <DataTypeId>63</DataTypeId>
         <Size>96</Size>
         <Name>fixed_system_internal_modbyconstant_hdl7</Name>
       </Types>
-      <Types type="type_info.Type" uuid="38cc1664-c7d6-4ccb-aea7-225812f681c8">
+      <Types type="type_info.Type" uuid="cd38f1e8-7ba5-4137-8499-d8e53c59e420">
         <DataTypeId>54</DataTypeId>
         <Size>262348</Size>
         <Name>hdl_RAM1</Name>
       </Types>
-      <Types type="type_info.Type" uuid="db77c413-869d-49b0-b0a5-727830643dd9">
+      <Types type="type_info.Type" uuid="32aa30f1-4a40-4ac8-b7a0-f90c70048798">
         <DataTypeId>57</DataTypeId>
         <Size>16520</Size>
         <Name>hdl_RAM3</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="9ba6712f-c91a-406c-9fd2-e38003c8679d">
+      <Types type="type_info.NumericType" uuid="67e2d850-5f47-47ff-943b-d81d27d51e1b">
         <MxClassId>10</MxClassId>
         <Size>2</Size>
         <typeEnum>NUMERIC</typeEnum>
         <Name>int16</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="9d7b7330-9b82-415d-8e28-d632438457e4">
+      <Types type="type_info.NumericType" uuid="156be8a0-dbc6-42fb-aafe-08bc37c7b553">
         <MxClassId>12</MxClassId>
         <Size>4</Size>
         <Name>int32</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="b59a9618-b9b0-48c4-a1e6-e9728ce4fba2">
+      <Types type="type_info.FixedPointType" uuid="f1a9caa0-456e-42c3-9634-512b3fd8305f">
         <DataTypeId>15</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>int64</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="57d4578a-8604-4f6d-8b71-65657637cc28">
+      <Types type="type_info.NumericType" uuid="19caed83-b7b7-42ec-b446-f7b0630f761a">
         <MxClassId>8</MxClassId>
         <Size>1</Size>
         <typeEnum>NUMERIC</typeEnum>
         <Name>int8</Name>
       </Types>
-      <Types type="type_info.Type" uuid="a10d4170-3dfa-4193-a3c6-98888b634c69">
+      <Types type="type_info.Type" uuid="8bb9a797-8d7a-4626-b235-de01ba7b02a8">
         <Name>integer</Name>
       </Types>
-      <Types type="type_info.Type" uuid="6d0eb15a-d848-4a1c-a95a-fa3058707c06">
+      <Types type="type_info.Type" uuid="377aefac-c28e-4aab-9f9f-7d8785d8e933">
         <Name>physical_connection</Name>
       </Types>
-      <Types type="type_info.Type" uuid="a338b625-74ab-4188-8464-d27288665ac3">
+      <Types type="type_info.Type" uuid="2f97e1e0-8e0d-4ea4-909a-28a4691951a9">
         <Name>pointer</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="f3ec8f00-40f0-41da-9c9a-e79411c31e89">
+      <Types type="type_info.FixedPointType" uuid="af48a9e3-d1aa-492f-80e5-39765df3dd63">
         <DataTypeId>24</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix13</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="6a29394b-42f6-48ac-83d1-438cae256aa5">
+      <Types type="type_info.FixedPointType" uuid="b38777d5-4e83-4801-ad94-bb145dd6ba2f">
         <DataTypeId>22</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix14_En12</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="e5192562-685d-4f48-81dc-92f6496f1298">
+      <Types type="type_info.FixedPointType" uuid="a7767574-1156-4192-91f6-1fef71ac0964">
         <DataTypeId>52</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix16_En1000</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="360402be-b7c0-407b-87be-e041b1f79492">
+      <Types type="type_info.FixedPointType" uuid="8da161db-9032-45b6-8cea-ab270b0ee708">
         <DataTypeId>19</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix16_En14</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="97ad80a0-4fbf-496f-b979-7a95f410fe53">
+      <Types type="type_info.FixedPointType" uuid="f03c825d-806b-4396-bcd3-6ae91eb29458">
         <DataTypeId>37</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix17_En14</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="9a826c18-764c-445d-8d2c-74861de6b56c">
+      <Types type="type_info.FixedPointType" uuid="db51c3cb-63a3-4db7-98e2-675ba2b1aa80">
         <DataTypeId>33</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix17_En15</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="612c6e44-72d9-4eea-9f1a-1b2754f61a61">
+      <Types type="type_info.FixedPointType" uuid="95addc67-4bed-4a36-975b-fdd474b34de9">
         <DataTypeId>30</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix18_En15</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="56eae04f-d45f-4c4e-8862-07d76f8647bf">
+      <Types type="type_info.FixedPointType" uuid="f73afa3f-e87b-4c4d-b061-9b97b02b7b5c">
         <DataTypeId>34</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix18_En16</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="0dab1ab9-90a5-418c-9116-b0727f34cb4c">
+      <Types type="type_info.FixedPointType" uuid="51794507-3aa6-4b4b-b5e8-359fc2ebfe48">
         <DataTypeId>58</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix19_En15</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="29efdd8e-7776-4b6e-bec4-d7414987f460">
+      <Types type="type_info.FixedPointType" uuid="bcf804ed-8012-41a7-be1f-eed6cfe574af">
         <DataTypeId>62</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix20_En16</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="4923eaa4-5ded-433f-92c3-96a47c44d027">
+      <Types type="type_info.FixedPointType" uuid="fcb0e0c4-f2d2-431a-8d17-bb5a86a4041a">
         <DataTypeId>36</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix26_En12</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="69139ab6-c86e-4caf-9590-6b52ebe68697">
+      <Types type="type_info.FixedPointType" uuid="955a7d69-215d-4844-8a65-735ff56a30e1">
         <DataTypeId>53</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix28_En14</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="99f4306f-1863-4650-8dcf-d22ca638b6b8">
+      <Types type="type_info.FixedPointType" uuid="ba3049a5-9043-4aba-8774-501af7ccf6a4">
         <DataTypeId>28</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix33_En15</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="f6bafe20-46fc-49e2-9d11-28698a90072d">
+      <Types type="type_info.FixedPointType" uuid="f0d0fcea-9b49-4038-9faf-ba41cac3bc57">
         <DataTypeId>35</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix6</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="b15c967b-1cdc-4e5a-b770-310c4b2c9a0d">
+      <Types type="type_info.FixedPointType" uuid="0935ec72-89ac-4bd7-b984-c90abf3a5951">
         <DataTypeId>21</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix64_En32</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="e4300b40-6347-41e8-8e5f-93aa3f18c786">
+      <Types type="type_info.FixedPointType" uuid="c7f30075-439b-42fa-b12d-17fae24518ca">
         <DataTypeId>55</DataTypeId>
         <Size>16</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>sfix65_En32</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="a9498769-165d-497c-afaa-13807b1902a8">
+      <Types type="type_info.NumericType" uuid="46fcd677-451b-42e0-a07d-d7494c7ebd53">
         <MxClassId>7</MxClassId>
         <Size>4</Size>
         <typeEnum>NUMERIC</typeEnum>
         <Name>single</Name>
       </Types>
-      <Types type="type_info.Type" uuid="f09b7e3e-ee2e-4649-b38b-b4a7e44e2983">
+      <Types type="type_info.Type" uuid="5c38fa04-e428-4c2d-a486-1db02e2622c4">
         <Name>timer_uint32_pair</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="61efff89-ee2e-48f5-b301-a6120363a6ab">
+      <Types type="type_info.FixedPointType" uuid="8aa992ae-32e0-4702-ada2-3595448737c5">
         <DataTypeId>29</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix1</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="64ac3b7c-9284-4ec9-b7e2-920c02ce41c1">
+      <Types type="type_info.FixedPointType" uuid="4d8b9b0d-2dbe-4a6a-ba3f-729c515274f9">
         <DataTypeId>42</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix10</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="dbc24d55-1eb8-4cc2-872c-462b0db473a8">
+      <Types type="type_info.FixedPointType" uuid="87c796d8-a975-4c76-9c38-30711de3c565">
         <DataTypeId>45</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix10_E3</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="57fd38c0-33dc-4738-9979-9022b008e16c">
+      <Types type="type_info.FixedPointType" uuid="c1161d61-cadf-42cc-bf62-e9ec121d6daf">
         <DataTypeId>43</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix11</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="0de73d1c-793b-4aec-988a-fb6495e22569">
+      <Types type="type_info.FixedPointType" uuid="6fc1567e-f914-4be6-b240-203b9ed40b03">
         <DataTypeId>31</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix11_En11</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="0275bc85-b30c-4c5a-96e0-e2a9f9353350">
+      <Types type="type_info.FixedPointType" uuid="7f0ba112-c854-4af6-992d-f0c1533937b4">
         <DataTypeId>23</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix12</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="c408c4e7-b65a-4dd5-9539-957676eda224">
+      <Types type="type_info.FixedPointType" uuid="0cecf665-d00d-4294-aa89-0e91615092f4">
         <DataTypeId>17</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix13</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="8fdd7918-b2c6-41d1-9ab1-f8d3d8c5128c">
+      <Types type="type_info.FixedPointType" uuid="cdff9b95-56da-431c-ac77-89b7e80dce9a">
         <DataTypeId>18</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix14</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="3eae6218-10e0-4d79-b2b5-ed009d92307c">
+      <Types type="type_info.FixedPointType" uuid="b842b3ec-d2b4-4801-a05f-00ce6fa6b9ca">
         <DataTypeId>44</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix15</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="c800c47d-34b4-4b98-bf14-db35a98685cd">
+      <Types type="type_info.FixedPointType" uuid="f7aeaf98-659f-401a-93c0-cf57c79d012a">
         <DataTypeId>50</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix17</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="5960ffce-39ed-4d2e-91b9-5a77c144c8bd">
+      <Types type="type_info.FixedPointType" uuid="d7737ba0-24dd-4d8d-b469-88796228baff">
         <DataTypeId>51</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix18</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="e8d497cb-6993-4bde-aa0c-a9796e4b766f">
+      <Types type="type_info.FixedPointType" uuid="5f58338a-0cad-4a9a-979a-84a415f01f05">
         <DataTypeId>27</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix2</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="5d3b0797-a64b-440c-95b5-96c3452f64bc">
+      <Types type="type_info.FixedPointType" uuid="0e582ffc-4bdf-4a67-b63e-861b27bf81a0">
         <DataTypeId>25</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix3</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="a65ae2e0-ff25-4b7f-9b34-11866b18b8aa">
+      <Types type="type_info.FixedPointType" uuid="b0250d70-df55-4c57-8f3d-25023219e721">
         <DataTypeId>20</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix30_En14</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="e306b677-43ce-4ff3-ada4-6151a147200e">
+      <Types type="type_info.FixedPointType" uuid="a35adf59-5f38-45dd-85c7-f667274b7054">
         <DataTypeId>32</DataTypeId>
         <Size>4</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix32_En16</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="f65438d4-274e-4211-8441-e477a29e4600">
+      <Types type="type_info.FixedPointType" uuid="e749cc0b-8b33-4695-a9a0-a32378e38319">
         <DataTypeId>26</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix4</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="b298c405-fcde-4fa8-9405-8751d92b1206">
+      <Types type="type_info.FixedPointType" uuid="7e0d39ac-53ff-48c3-bbea-36125995152d">
         <DataTypeId>38</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix5</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="96d6dd3b-2523-4945-bd07-dedf3be9d0ee">
+      <Types type="type_info.FixedPointType" uuid="c814887d-8524-431b-ad83-b3b9f0a8b361">
         <DataTypeId>49</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix51_En57</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="2669f4dd-0509-4e68-9575-fbbbf83cdcb2">
+      <Types type="type_info.FixedPointType" uuid="d6d45722-a590-4482-984b-396f34b7a3a4">
         <DataTypeId>47</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix51_En62</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="25eb41fd-4dd4-4c2d-805c-0948bc823236">
+      <Types type="type_info.FixedPointType" uuid="b20790e2-97ca-4766-83a9-3ed4a9994f14">
         <DataTypeId>48</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix52_En57</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="a4b030a4-2f60-41bd-aac7-9a9b907dce5a">
+      <Types type="type_info.FixedPointType" uuid="0cd6595c-7266-4a90-91b1-ae74f9f3aa13">
         <DataTypeId>46</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix53_En59</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="dd59e1c9-9d4b-44f4-b194-c22b29be2577">
+      <Types type="type_info.FixedPointType" uuid="2690a3dd-fbed-4f33-9bda-998030eedfe9">
         <DataTypeId>39</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix6</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="7b6a224e-06d6-4417-8af7-beb4deda2c6f">
+      <Types type="type_info.FixedPointType" uuid="e3522fcd-045e-4709-a0d5-29d076a6bb81">
         <DataTypeId>40</DataTypeId>
         <Size>1</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix7</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="9a7d2532-2efe-44d7-ab7c-8b0c5d556660">
+      <Types type="type_info.FixedPointType" uuid="e1160c44-f72b-4f9a-8cfb-864e81cbe4c6">
         <DataTypeId>41</DataTypeId>
         <Size>2</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>ufix9</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="40bcbfee-15c7-41eb-bb6d-a922832b499a">
+      <Types type="type_info.NumericType" uuid="8e56fafa-3e62-480d-84f0-6a30330afbd2">
         <MxClassId>11</MxClassId>
         <Size>2</Size>
         <typeEnum>NUMERIC</typeEnum>
         <Name>uint16</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="49bfc8cf-8df5-4495-b755-acc38cad2821">
+      <Types type="type_info.NumericType" uuid="db7b4bc3-6836-48cd-a7b2-d042aac1ca20">
         <MxClassId>13</MxClassId>
         <Size>4</Size>
         <typeEnum>NUMERIC</typeEnum>
         <Name>uint32</Name>
       </Types>
-      <Types type="type_info.FixedPointType" uuid="db795db0-93d9-4669-a04b-5c7c5270f12a">
+      <Types type="type_info.FixedPointType" uuid="12ba0962-7e8f-4c70-b1f2-89d73733c0d7">
         <DataTypeId>16</DataTypeId>
         <Size>8</Size>
         <typeEnum>FIXPOINT</typeEnum>
         <Name>uint64</Name>
       </Types>
-      <Types type="type_info.NumericType" uuid="de2cc827-0c64-4faf-8ea8-0eee9ad8134c">
+      <Types type="type_info.NumericType" uuid="34dfbe14-ac61-4903-b3d6-1a5cc1d6e02c">
         <MxClassId>9</MxClassId>
         <Size>1</Size>
         <typeEnum>NUMERIC</typeEnum>
@@ -762,6 +762,6 @@
       </Types>
       <isInitialized>true</isInitialized>
     </typeTable>
-    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="c104272e-e1d9-4741-b45e-20dc384ee318"/>
+    <varTsUIDMap type="ModelRefInfoRepo.VarTsUIDMap" uuid="6c149633-bede-40f2-9d51-0896ab2a773d"/>
   </ModelRefInfoRepo.ModelRefInfoRoot>
 </MF0>
