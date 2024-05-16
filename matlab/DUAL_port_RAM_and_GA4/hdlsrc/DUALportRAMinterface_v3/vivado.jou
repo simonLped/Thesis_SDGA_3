@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed May 15 10:50:03 2024
+# Process ID: 18444
+# Current directory: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3
+# Command line: vivado.exe -mode batch -source gm_DUALportRAMinterface_v3_vs.tcl
+# Log file: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3/vivado.log
+# Journal file: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3\vivado.jou
+# Running On: DESKTOP-4RDNORI, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 20, Host memory: 34115 MB
+#-----------------------------------------------------------
+source gm_DUALportRAMinterface_v3_vs.tcl

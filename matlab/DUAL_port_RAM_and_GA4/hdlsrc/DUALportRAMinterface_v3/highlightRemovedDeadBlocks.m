@@ -1,0 +1,16 @@
+cs.HiliteType = 'user1';
+cs.ForegroundColor = 'black';
+cs.BackgroundColor = 'red';
+set_param(0, 'HiliteAncestorsData', cs);
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/D2/individual1/Subsystem','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/D2/individual1/Subsystem/Delay','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/D2/individual1/Subsystem/Switch','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Delay','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Delay2','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Logical Operator1','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Logical Operator2','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Logical Operator3','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Logical Operator4','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/Logical Operator5','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/FIFO_system3/tuneback','user1');
+hilite_system('DUALportRAMinterface_v3/PL/integration_block1/GA_main/Demux1','user1');

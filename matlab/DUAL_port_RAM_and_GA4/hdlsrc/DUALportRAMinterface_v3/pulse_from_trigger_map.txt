@@ -1,0 +1,1 @@
+DUALportRAMinterface_v3/PL/pulse_from_trigger --> pulse_from_trigger

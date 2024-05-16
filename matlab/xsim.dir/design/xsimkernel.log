@@ -1,0 +1,7 @@
+Running: xsim.dir/design/xsimk.dll -log hdlverifier_cosim_xsi.log -wdb hdlverifier_cosim_waves.wdb
+Design successfully loaded
+Design Loading Memory Usage: 6987056 KB (Peak: 6987056 KB)
+Design Loading CPU Usage: 436014 ms
+Simulation completed
+Simulation Memory Usage: 6996324 KB (Peak: 6996324 KB)
+Simulation CPU Usage: 561593 ms

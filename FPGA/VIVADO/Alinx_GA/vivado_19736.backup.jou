@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed May 15 10:15:38 2024
+# Process ID: 19736
+# Current directory: C:/Users/Simon/AppData/Roaming/Xilinx/Vivado
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19604
+# Log file: C:/Users/Simon/AppData/Roaming/Xilinx/Vivado/vivado.log
+# Journal file: C:/Users/Simon/AppData/Roaming/Xilinx/Vivado\vivado.jou
+# Running On: DESKTOP-4RDNORI, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 20, Host memory: 34115 MB
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Simon/Documents/VIVADO_projects/ps_uart/ps_uart.xpr
+archive_project C:/Users/Simon/Documents/VIVADO_projects/Alinx_GA.xpr.zip -temp_dir C:/Users/Simon/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-19736-DESKTOP-4RDNORI -force -include_local_ip_cache -include_config_settings

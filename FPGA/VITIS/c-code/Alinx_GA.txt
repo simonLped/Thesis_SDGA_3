@@ -1,0 +1,158 @@
+
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+#include "xgpio.h"
+#include "xbram.h"
+#include <unistd.h>
+#include "xuartps.h"
+#include <stdint.h>
+
+XUartPs UartPs; // Instance of the UART Device
+
+int InitializeUART(XUartPs *UartInst, u16 DeviceId) {
+    XUartPs_Config *Config;
+    int Status;
+
+    // Get configuration for the UART device
+    Config = XUartPs_LookupConfig(DeviceId);
+    if (!Config) {
+        xil_printf("UART configuration not found.\r\n");
+        return XST_FAILURE;
+    }
+
+    // Initialize the UART device
+    Status = XUartPs_CfgInitialize(UartInst, Config, Config->BaseAddress);
+    if (Status != XST_SUCCESS) {
+        xil_printf("UART initialization failed.\r\n");
+        return XST_FAILURE;
+    }
+
+    // Set the Baud Rate
+    XUartPs_SetBaudRate(UartInst, 115200);
+
+    return XST_SUCCESS;
+}
+
+
+//void delay_cycles() {
+//    // Inline assembly to insert 6 NOP instructions
+//    __asm__ volatile (
+//        "nop\n\t"
+//        "nop\n\t"
+//        "nop\n\t"
+//        "nop\n\t"
+//        "nop\n\t"
+//        "nop\n\t"
+//    );
+//}
+
+
+
+
+int main()
+{
+	init_platform();
+
+
+
+	XGpio Gpio; /* The Instance of the GPIO Driver */
+	XBram Bram;	/* The Instance of the BRAM Driver */
+	XBram_Config *ConfigPtr;
+
+	int Status;
+
+    Status = XGpio_Initialize(&Gpio, XPAR_AXI_GPIO_0_DEVICE_ID);
+    if (Status != XST_SUCCESS) {
+        return XST_FAILURE;  // Handle initialization failure
+    }
+
+
+	ConfigPtr = XBram_LookupConfig(XPAR_BRAM_0_DEVICE_ID);
+	if (ConfigPtr == (XBram_Config *) NULL) {
+		return XST_FAILURE;
+	}
+
+	Status = XBram_CfgInitialize(&Bram, ConfigPtr,
+				     ConfigPtr->CtrlBaseAddress);
+	if (Status != XST_SUCCESS) {
+		return XST_FAILURE;
+	}
+
+
+
+
+	u8 rec_test;
+	int ReceivedCount = 0;
+	int input_data_length = (12291)*2;
+//	int input_data_length = 4*2;
+	int print_length = 20;
+
+	// Initialize UART
+	Status = InitializeUART(&UartPs, XPAR_XUARTPS_0_DEVICE_ID);
+	if (Status != XST_SUCCESS) {
+		xil_printf("UART Initialization Failed\r\n");
+		return XST_FAILURE;
+	}
+
+
+
+	xil_printf("Waiting for the first data sample...\r\n");
+
+	int buffer;
+	int combined;
+	while (ReceivedCount < input_data_length) {
+		ReceivedCount += XUartPs_Recv(&UartPs, &rec_test, input_data_length - ReceivedCount);
+
+		 if (ReceivedCount % 2 == 1){
+
+			 buffer = rec_test;
+		 }
+		 else{
+			 combined = (rec_test << 8) | buffer;
+			 XBram_WriteReg(XPAR_BRAM_0_BASEADDR,ReceivedCount/2*4-4,combined);
+		 }
+
+//		XBram_WriteReg(XPAR_BRAM_0_BASEADDR,ReceivedCount*4-4,rec_test);
+//		xil_printf("%d: %d %d \n\r",ReceivedCount, rec_test, buffer);
+
+	}
+
+
+
+
+    int out_data;
+    for (int i = 0; i < print_length*4; i=i+4){
+    	out_data = XBram_ReadReg(XPAR_BRAM_0_BASEADDR,i);
+		xil_printf("%d: %d\n\r",i, out_data);
+
+    }
+
+    sleep(1);
+	XGpio_SetDataDirection(&Gpio, 2, 0x00000000);
+	XGpio_SetDataDirection(&Gpio, 1, 0xFFFFFFFF);
+	XGpio_DiscreteWrite(&Gpio, 2, 0x1);
+
+
+//    sleep(30);
+	u32 PL_done;
+    while (1) {
+		PL_done = XGpio_DiscreteRead(&Gpio, 1);
+		if (PL_done & 0x00000001) {
+			break;
+		}
+
+	}
+
+    for (int i = 0; i < print_length*4; i=i+4){
+    	out_data = XBram_ReadReg(XPAR_BRAM_0_BASEADDR,i);
+		xil_printf("%d: %d\n\r",i, out_data);
+
+    }
+
+
+    cleanup_platform();
+    return 0;
+}
+
+

@@ -1,0 +1,894 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.1 (win64) Build 3865809 Sun May  7 15:05:29 MDT 2023
+| Date         : Thu May 16 20:41:56 2024
+| Host         : DESKTOP-4RDNORI running 64-bit major release  (build 9200)
+| Command      : report_methodology -file zynq_top_methodology_drc_routed.rpt -pb zynq_top_methodology_drc_routed.pb -rpx zynq_top_methodology_drc_routed.rpx
+| Design       : zynq_top
+| Device       : xc7z020clg400-2
+| Speed File   : -2
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: checkpoint_zynq_top
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 170
++-----------+------------------+-------------------------------------------------------------+------------+
+| Rule      | Severity         | Description                                                 | Violations |
++-----------+------------------+-------------------------------------------------------------+------------+
+| TIMING-6  | Critical Warning | No common primary clock between related clocks              | 1          |
+| TIMING-7  | Critical Warning | No common node between related clocks                       | 1          |
+| SYNTH-10  | Warning          | Wide multiplier                                             | 165        |
+| TIMING-30 | Warning          | Sub-optimal master source pin selection for generated clock | 1          |
+| XDCC-1    | Warning          | Scoped Clock constraint overwritten with the same name      | 1          |
+| XDCC-7    | Warning          | Scoped Clock constraint overwritten on the same source      | 1          |
++-----------+------------------+-------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-6#1 Critical Warning
+No common primary clock between related clocks  
+The clocks clk_fpga_0 and clk_slow_lol are related (timed together) but they have no common primary clock. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_slow_lol]
+Related violations: <none>
+
+TIMING-7#1 Critical Warning
+No common node between related clocks  
+The clocks clk_fpga_0 and clk_slow_lol are related (timed together) but they have no common node. The design could fail in hardware. To find a timing path between these clocks, run the following command: report_timing -from [get_clocks clk_fpga_0] -to [get_clocks clk_slow_lol]
+Related violations: <none>
+
+SYNTH-10#1 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#2 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp__0 of size 13x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#3 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp__1 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#4 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#5 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp__3 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#6 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#7 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp__5 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#8 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product1_mul_temp__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#9 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#10 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp__0 of size 13x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#11 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp__1 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#12 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#13 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp__3 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#14 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#15 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp__5 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#16 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product2_mul_temp__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#17 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product3_mul_temp of size 15x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#18 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product3_mul_temp__0 of size 18x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#19 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product3_mul_temp__1 of size 18x16, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#20 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product3_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#21 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product3_mul_temp__3 of size 18x16, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#22 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product4_mul_temp of size 15x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#23 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product4_mul_temp__0 of size 18x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#24 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product4_mul_temp__1 of size 18x16, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#25 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product4_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#26 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product4_mul_temp__3 of size 18x16, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#27 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product5_mul_temp of size 15x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#28 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product5_mul_temp__0 of size 18x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#29 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product5_mul_temp__1 of size 18x16, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#30 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product5_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#31 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product5_mul_temp__3 of size 18x16, it is decomposed from a wide multipler into 6 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#32 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp of size 13x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#33 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp__0 of size 13x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#34 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp__1 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#35 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#36 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp__3 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#37 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#38 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp__5 of size 18x16, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#39 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_D2/Product_mul_temp__6 of size 18x18, it is decomposed from a wide multipler into 8 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#40 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_im_pipe10 of size 11x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#41 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_im_pipe10__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#42 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_im_pipe1_reg of size 11x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#43 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_im_pipe1_reg__0 of size 18x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#44 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_re_pipe10 of size 11x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#45 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_re_pipe10__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#46 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_re_pipe1_reg of size 11x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#47 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult1_re_pipe1_reg__0 of size 18x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#48 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_im_pipe10 of size 11x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#49 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_im_pipe10__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#50 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_im_pipe1_reg of size 11x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#51 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_im_pipe1_reg__0 of size 18x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#52 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_re_pipe10 of size 11x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#53 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_re_pipe10__0 of size 18x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#54 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_re_pipe1_reg of size 11x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#55 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_FFT/u_MinResRX2FFT_BUTTERFLY/u_MUL4/Complex4Multiply_mult2_re_pipe1_reg__0 of size 18x11, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#56 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg of size 12x19, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#57 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#58 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp of size 24x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#59 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#60 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#61 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__0 of size 24x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#62 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__1 of size 18x19, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#63 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#64 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#65 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#66 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__1 of size 18x19, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#67 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#68 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#69 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__4 of size 18x19, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#70 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__5 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#71 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg of size 12x21, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#72 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#73 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp of size 25x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#74 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#75 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#76 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__0 of size 25x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#77 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__1 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#78 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#79 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#80 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#81 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__1 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#82 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#83 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#84 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__4 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#85 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__5 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#86 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg of size 12x19, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#87 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#88 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp of size 23x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#89 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#90 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#91 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__0 of size 23x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#92 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__1 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#93 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#94 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__3 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#95 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#96 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg of size 23x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#97 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__0 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#98 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__1 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#99 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__2 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#100 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__3 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#101 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_a4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__4 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#102 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg of size 12x21, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#103 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#104 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp of size 25x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#105 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#106 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#107 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__0 of size 25x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#108 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__1 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#109 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#110 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#111 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#112 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__1 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#113 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#114 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#115 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__4 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#116 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b2_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__5 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#117 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg of size 12x21, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#118 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#119 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp of size 25x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#120 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#121 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#122 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__0 of size 25x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#123 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__1 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#124 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#125 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#126 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#127 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__1 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#128 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__2 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#129 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__3 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#130 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__4 of size 18x20, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#131 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b3_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__5 of size 18x18, it is decomposed from a wide multipler into 13 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#132 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg of size 12x23, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#133 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_fracReg_reg__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#134 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp of size 23x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#135 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#136 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp_1__0 of size 12x18, it is decomposed from a wide multipler into 4 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#137 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__0 of size 23x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#138 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__1 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#139 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__2 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#140 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__3 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#141 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_mul_temp__4 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#142 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg of size 23x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#143 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__0 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#144 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__1 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#145 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__2 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#146 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__3 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#147 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_Subsystem/u_b4_random/u_mod_by_constant/multiply_and_extract_fraction_outReg_reg__4 of size 18x18, it is decomposed from a wide multipler into 12 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#148 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp of size 18x12, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#149 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1 of size 18x12, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#150 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__0 of size 12x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#151 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__1 of size 12x12, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#152 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__2 of size 18x12, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#153 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__3 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#154 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__4 of size 12x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#155 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__5 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#156 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__6 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#157 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp_1__7 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#158 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__0 of size 12x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#159 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__1 of size 12x12, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#160 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__2 of size 18x12, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#161 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__3 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#162 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__4 of size 12x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#163 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__5 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#164 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__6 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+SYNTH-10#165 Warning
+Wide multiplier  
+Detected multiplier at PL_i/u_integration_block1/u_accumulator_scorer/multiplier_mul_temp__7 of size 18x18, it is decomposed from a wide multipler into 9 DSP blocks.
+Related violations: <none>
+
+TIMING-30#1 Warning
+Sub-optimal master source pin selection for generated clock  
+The generated clock clk_slow_lol has a sub-optimal master source pin selection, timing can be pessimistic
+Related violations: <none>
+
+XDCC-1#1 Warning
+Scoped Clock constraint overwritten with the same name  
+A new clock constraint create_clock overrides a previous scoped clock constraint with the same name. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 20.000 -name clk_pl_lol [get_ports clk_pl_lol] (Source: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3/clock_constraint.xdc (Line: 2))
+Previous: create_clock -period 20.000 [get_ports clk_pl_lol] (Source: C:/Users/Simon/Documents/VIVADO_projects/Alinx_GA/ps_uart.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+XDCC-7#1 Warning
+Scoped Clock constraint overwritten on the same source  
+A new clock constraint create_clock overrides a previous scoped clock constraint defined on the same source. It is not recommended to override a scoped (typically an IP) clock constraint and could result in unexpected behaviors.
+New: create_clock -period 20.000 -name clk_pl_lol [get_ports clk_pl_lol] (Source: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3/clock_constraint.xdc (Line: 2))
+Previous: create_clock -period 20.000 [get_ports clk_pl_lol] (Source: C:/Users/Simon/Documents/VIVADO_projects/Alinx_GA/ps_uart.gen/sources_1/ip/clk_wiz_0/clk_wiz_0.xdc (Line: 56))
+Related violations: <none>
+
+

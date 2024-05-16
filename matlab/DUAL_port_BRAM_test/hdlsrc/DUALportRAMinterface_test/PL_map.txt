@@ -1,3 +1,11 @@
 DUALportRAMinterface_test/PL/index_counter --> index_counter
+DUALportRAMinterface_test/PL/individual1/Subsystem --> Subsystem
+DUALportRAMinterface_test/PL/individual1/Subsystem1 --> Subsystem1
+DUALportRAMinterface_test/PL/individual1/Subsystem2 --> Subsystem2
+DUALportRAMinterface_test/PL/individual1/Subsystem3 --> Subsystem3
+DUALportRAMinterface_test/PL/individual1/Subsystem4 --> Subsystem4
+DUALportRAMinterface_test/PL/individual1/Subsystem5 --> Subsystem5
+DUALportRAMinterface_test/PL/individual1/Subsystem6 --> Subsystem6
+DUALportRAMinterface_test/PL/individual1 --> individual1
 DUALportRAMinterface_test/PL/Chart --> Chart
 DUALportRAMinterface_test/PL --> PL

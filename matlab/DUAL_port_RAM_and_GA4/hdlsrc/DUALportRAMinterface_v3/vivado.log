@@ -1,0 +1,28 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed May 15 10:50:03 2024
+# Process ID: 18444
+# Current directory: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3
+# Command line: vivado.exe -mode batch -source gm_DUALportRAMinterface_v3_vs.tcl
+# Log file: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3/vivado.log
+# Journal file: C:/Users/Simon/Documents/Thesis_SDGA_3/matlab/DUAL_port_RAM_and_GA4/hdlsrc/DUALportRAMinterface_v3\vivado.jou
+# Running On: DESKTOP-4RDNORI, OS: Windows, CPU Frequency: 3418 MHz, CPU Physical cores: 20, Host memory: 34115 MB
+#-----------------------------------------------------------
+source gm_DUALportRAMinterface_v3_vs.tcl
+# exec xvlog alpha16.v alpha15.v alpha14.v alpha13.v alpha12.v alpha11.v alpha10.v alpha9_ss.v alpha8_ss.v alpha7_ss.v alpha6_ss.v alpha5_ss.v alpha4_ss.v alpha3_ss.v alpha2_ss.v alpha1_ss.v alpha16bLFSR.v alpha16_block.v alpha15_block.v alpha14_block.v alpha13_block.v alpha12_block.v alpha11_block.v alpha10_block.v alpha9_ss_block.v alpha8_ss_block.v alpha7_ss_block.v alpha6_ss_block.v alpha5_ss_block.v alpha4_ss_block.v alpha3_ss_block.v alpha2_ss_block.v alpha1_ss_block.v alpha16bLFSR1.v modimpl_ntwk.v a2_random.v modimpl_ntwk_block.v a3_random.v modimpl_ntwk_block1.v a4_random.v modimpl_ntwk_block2.v b2_random.v modimpl_ntwk_block3.v b3_random.v modimpl_ntwk_block4.v b4_random.v random_gene.v random_method.v random_sample.v Subsystem.v TWDLROM.v MINRESRX2FFT_CTRL.v SimpleDualPortRAM_generic.v MINRESRX2FFT_MEMORY.v MINRESRX2FFT_BTFSEL.v Complex4Multiply.v MINRESRX2_BUTTERFLY.v MINRESRX2FFT_MEMSEL.v MINRESRX2FFT_OUTMux.v FFT.v alpha8bit_PE1.v alpha8bit_PE10.v alpha8bit_PE2.v alpha8bit_PE3.v alpha8bit_PE4.v alpha8bit_PE5.v alpha8bit_PE6.v alpha8bit_PE7.v alpha8bit_PE8.v alpha64bitmsb_finder.v accumulator_scorer.v Chart.v generation_counter.v output_selector.v Chart_block.v Subsystem_block.v Subsystem1.v Subsystem2.v Subsystem3.v Subsystem4.v Subsystem5.v Subsystem6.v individual3.v Subsystem_block1.v Subsystem1_block.v Subsystem2_block.v Subsystem3_block.v Subsystem4_block.v Subsystem5_block.v Subsystem6_block.v individual2.v Subsystem_block2.v Subsystem1_block1.v Subsystem2_block1.v Subsystem3_block1.v Subsystem4_block1.v Subsystem5_block1.v Subsystem6_block1.v individual1.v Subsystem_block3.v Subsystem1_block2.v Subsystem2_block2.v Subsystem3_block2.v Subsystem4_block2.v Subsystem5_block2.v Subsystem6_block2.v individual4.v swap_counter.v swap_counter1.v coefficent_array.v output_selector_block.v Chart_block1.v Subsystem_block4.v Subsystem1_block3.v Subsystem2_block3.v Subsystem3_block3.v Subsystem4_block3.v Subsystem5_block3.v Subsystem6_block3.v individual3_block.v Subsystem_block5.v Subsystem1_block4.v Subsystem2_block4.v Subsystem3_block4.v Subsystem4_block4.v Subsystem5_block4.v Subsystem6_block4.v individual2_block.v Subsystem_block6.v Subsystem1_block5.v Subsystem2_block5.v Subsystem3_block5.v Subsystem4_block5.v Subsystem5_block5.v Subsystem6_block5.v individual1_block.v Subsystem_block7.v Subsystem1_block6.v Subsystem2_block6.v Subsystem3_block6.v Subsystem4_block6.v Subsystem5_block6.v Subsystem6_block6.v individual4_block.v swap_counter_block.v swap_counter1_block.v coefficent_array1.v index_counter.v GA_main.v Subsystem1_block7.v Subsystem2_block7.v Subsystem3_block7.v Subsystem4_block7.v Subsystem5_block7.v Subsystem6_block7.v individual1_block1.v output_cast1.v D2.v Chart3.v Chart1.v Chart2.v SimpleDualPortRAM_generic_block.v HDL_FIFO1.v FIFO_system3.v HDL_FIFO1_block.v FIFO_system1.v integration_block1.v to_uint32_1.v to_uint32_2.v to_uint32_3.v to_uint32_4.v to_uint32_5.v to_uint32_6.v Chart_block2.v index_counter_block.v PL.v 
+# exec xelab PL --timescale 1ps/1ps --override_timeunit --override_timeprecision -dll --snapshot design -debug wave 
+# cd ../../../
+# if {[file exists xsim.dir] == 1} {
+#     set mtime [file mtime xsim.dir]
+#     set mtimestamp [clock format $mtime -format %Y%m%d_%H%M%S]
+#     set xsim_savefile "xsim.dir.$mtimestamp"
+#     file rename xsim.dir $xsim_savefile
+# }
+# set proj_xsim_dir {DUAL_port_RAM_and_GA4\hdlsrc\DUALportRAMinterface_v3/xsim.dir}
+# set proj_mtime [file mtime "$proj_xsim_dir/design"]
+# file copy -force $proj_xsim_dir .
+# file mtime xsim.dir $proj_mtime
+INFO: [Common 17-206] Exiting Vivado at Wed May 15 10:50:11 2024...
